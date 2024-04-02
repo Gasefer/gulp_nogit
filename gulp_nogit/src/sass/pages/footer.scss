@@ -1,0 +1,64 @@
+footer {
+  background: #f8f8f8;
+}
+
+.footer__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 61px;
+}
+
+.footer_social-icons {
+  margin-top: 30px;
+  display: flex;
+  gap: 21px;
+}
+
+.footer_social_a {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__main-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 16px;
+}
+
+.footer__main-block_logo {
+  gap: 0;
+  width: 129px;
+}
+
+.footer__main-block_cultura {
+  width: 194px;
+}
+
+.footer__main-block_conditions,
+.footer__main-block_articles {
+  width: 214px;
+}
+.footer_margin-top {
+  margin-top: 2.5px;
+}
+
+.footer_link_green {
+  color: $green-dark;
+}
+
+.footer_link-contacts {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.footer_link-contacts_provider {
+  width: 57px;
+}

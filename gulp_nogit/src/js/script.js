@@ -1,9 +1,9 @@
 (function ($) {
-    'use strict'
+  "use strict";
 
-    $(document).ready(function () {
-        svg4everybody({})
-    })
-})(jQuery)
+  $(document).ready(function () {
+    // svg4everybody({})
+  });
+})(jQuery);
 
 //=require partials/send-form-smtp.js

@@ -1,0 +1,27 @@
+$green-dark: #2a8927;
+$dark-red: #ff4444;
+$black: #121212;
+
+.color-black {
+  fill: $black;
+}
+
+.color-red {
+  fill: $dark-red;
+}
+
+.color-green {
+  fill: $green-dark;
+}
+
+.footer_link-contacts_box {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__social-icons_svg {
+  max-width: 20px;
+}

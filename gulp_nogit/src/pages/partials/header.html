@@ -12,36 +12,37 @@
       <div class="header__contacts">
         <div class="header__phone">
           <a href="tel:+380507411310">(050) 741-13-10</a>
-          @@include('mixins/svg-icon.html', {"name": "phone", "class":
-          "color-red"})
+          @@include('mixins/svg-icon.html', {"name": "arrow_bottom", "class":
+          "header__arrow-bottom_svg"})
           <div class="header__phone-block">
             <a href="tel:+380681958018">(068) 195-80-18</a>
             <a href="tel:+380636792601">(063) 679-26-01</a>
           </div>
         </div>
-        <div class="header_feedback">Зворотній зв’язок</div>
+        <a href="#" class="header_feedback">Зворотній зв’язок</a>
       </div>
     </div>
     <div class="header__bottom-block">
       <a href="#" class="header__logo">
-        <img src="./img/logo.svg" alt="logo" />
-        @@include('mixins/svg-icon.html', {"name": "logo", "class":
-        "color-red"})
+        <img class="logo" src="./img/logo.svg" alt="logo" />
       </a>
       <button class="header__button-catalog">
         <div class="header__catalog-icon">
-          <img src="./img/icon/menu.png" alt="menu" />
+          @@include('mixins/svg-icon.html', {"name": "menu", "class":
+          "header__catalog-icon_svg"})
         </div>
         <p>Каталог</p>
       </button>
       <input type="text" class="header__search" placeholder="Я шукаю..." />
-      <a href="#" class="header__navigation-a"
-        ><img src="./img/icon/person.png" alt="person" /></a
-      ><a href="#" class="header__navigation-a"
-        ><img src="./img/icon/like.png" alt="like" /></a
-      ><a href="#" class="header__navigation-a"
-        ><img src="./img/icon/cart.svg" alt="cart" />
-        <span class="absolute_count">100</span></a
+      <a href="#" class="header__navigation-a">
+        @@include('mixins/svg-icon.html', {"name": "person", "class":
+        "header__search_svg-icon"})</a
+      ><a href="#" class="header__navigation-a">
+        @@include('mixins/svg-icon.html', {"name": "like", "class":
+        "header__search_svg-icon"})</a
+      ><a href="#" class="header__navigation-a">
+        @@include('mixins/svg-icon.html', {"name": "cart", "class":
+        "header__search_svg-icon"}) <span class="absolute_count">100</span></a
       >
     </div>
   </div>
