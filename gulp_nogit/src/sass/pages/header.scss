@@ -26,6 +26,11 @@ header {
 
 .header__bottom-block {
   margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__phone {
@@ -55,19 +60,11 @@ header {
   border-radius: 5px;
   gap: 10px;
   flex-direction: column;
+  z-index: 3;
 }
 
 .header_feedback {
   color: #2a8927;
-}
-
-.header__bottom-block {
-  margin-right: 5px;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
@@ -124,12 +121,17 @@ header {
   background-size: 19px 19px;
 }
 
+.header__navigation {
+  min-width: 184px;
+  display: flex;
+  justify-content: space-between;
+}
 .header__navigation-a {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 72px;
+  width: 48px;
   height: 48px;
   border-radius: 100px;
 }
@@ -149,6 +151,18 @@ header {
   line-height: 17px;
   letter-spacing: 0em;
   text-align: left;
-  right: -4px;
+  right: -6px;
   top: 7px;
+}
+
+.active-button_phone {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background: #4c4c4c;
+  opacity: 0.3;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  overflow-y: auto;
 }

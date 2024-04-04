@@ -1,4 +1,5 @@
 <header>
+  <div class="active-button_phone"></div>
   <div class="container">
     <div class="header-inside"></div>
     <div class="header__upper-block">
@@ -31,20 +32,23 @@
           @@include('mixins/svg-icon.html', {"name": "menu", "class":
           "header__catalog-icon_svg"})
         </div>
+        <div class="header__hiden-box"></div>
         <p>Каталог</p>
       </button>
       <input type="text" class="header__search" placeholder="Я шукаю..." />
-      <a href="#" class="header__navigation-a">
-        @@include('mixins/svg-icon.html', {"name": "person", "class":
-        "header__search_svg-icon svg-width_20px"})</a
-      ><a href="#" class="header__navigation-a">
-        @@include('mixins/svg-icon.html', {"name": "like", "class":
-        "header__search_svg-icon svg-width_20px"})</a
-      ><a href="#" class="header__navigation-a">
-        @@include('mixins/svg-icon.html', {"name": "cart", "class":
-        "header__search_svg-icon svg-width_20px"})
-        <span class="absolute_count">100</span></a
-      >
+      <div class="header__navigation">
+        <a href="#" class="header__navigation-a">
+          @@include('mixins/svg-icon.html', {"name": "person", "class":
+          "header__search_svg-icon svg-height_20px"})</a
+        ><a href="#" class="header__navigation-a">
+          @@include('mixins/svg-icon.html', {"name": "like", "class":
+          "header__search_svg-icon svg-height_20px"})</a
+        ><a href="#" class="header__navigation-a">
+          @@include('mixins/svg-icon.html', {"name": "cart", "class":
+          "header__search_svg-icon svg-height_20px"})
+          <span class="absolute_count">100</span></a
+        >
+      </div>
     </div>
   </div>
 </header>
