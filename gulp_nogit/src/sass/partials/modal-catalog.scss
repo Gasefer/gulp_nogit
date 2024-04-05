@@ -1,6 +1,7 @@
 $green-dark: #2a8927;
 $dark-red: #ff4444;
 $black: #121212;
+$gray: #f8f8f8;
 
 .color-black {
   fill: $black;
@@ -14,12 +15,31 @@ $black: #121212;
   fill: $green-dark;
 }
 
-.footer_link-contacts_box {
+.svg__box {
   width: 24px;
   height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.svg__big-box {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg_arrow__box {
+  width: 6.25px !important;
+  height: 11px !important;
+}
+
+.svg_arrow-bottom__box {
+  margin-left: 5px;
+  width: 11px;
+  height: 6.25px;
 }
 
 .footer__social-icons_svg {
@@ -28,11 +48,6 @@ $black: #121212;
 
 .svg-height_20px {
   min-height: 23px;
-}
-
-.size_arrow {
-  width: 6.25px !important;
-  height: 11px !important;
 }
 
 .svg-size_ecolist {
@@ -73,4 +88,13 @@ $black: #121212;
 .svg-size_hand_heart {
   width: 21px;
   height: 20.5px;
+}
+
+.svg-size_menu {
+  width: 18px;
+  height: 16px;
+}
+.svg-size_closer {
+  width: 14px;
+  height: 14px;
 }
