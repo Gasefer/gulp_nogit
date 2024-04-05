@@ -1,5 +1,5 @@
 $green-dark: #2a8927;
-$dark-red: #ff4444;
+$red: #ff4444;
 $black: #121212;
 $gray: #f8f8f8;
 
@@ -8,7 +8,7 @@ $gray: #f8f8f8;
 }
 
 .color-red {
-  fill: $dark-red;
+  fill: $red;
 }
 
 .color-green {
@@ -40,10 +40,6 @@ $gray: #f8f8f8;
   margin-left: 5px;
   width: 11px;
   height: 6.25px;
-}
-
-.footer__social-icons_svg {
-  max-width: 20px;
 }
 
 .svg-height_20px {
@@ -97,4 +93,53 @@ $gray: #f8f8f8;
 .svg-size_closer {
   width: 14px;
   height: 14px;
+}
+
+.svg-size_heart-red {
+  width: 20px;
+  height: 17.16px;
+}
+
+.svg-size_footer-phone {
+  width: 17px;
+  height: 17px;
+}
+
+.svg-size_footer-mail {
+  width: 19px;
+  height: 15px;
+}
+
+.svg-size_footer-mark {
+  width: 15.1px;
+  height: 19.01px;
+}
+
+.svg-size_footer-youtube {
+  width: 20px;
+  height: 14px;
+}
+
+.svg-size_footer-viber {
+  width: 18.8px;
+  height: 20.47px;
+}
+
+.svg-size_footer-facebook {
+  width: 18.8px;
+  height: 20.47px;
+}
+.svg-size_header-person {
+  width: 19px;
+  height: 20px;
+}
+
+.svg-size_header-like {
+  width: 22px;
+  height: 20px;
+}
+
+.svg-size_cart {
+  width: 24px;
+  height: 24px;
 }

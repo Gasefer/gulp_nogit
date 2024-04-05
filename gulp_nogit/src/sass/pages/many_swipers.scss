@@ -1,0 +1,124 @@
+.mini_swiper1 {
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mini-swiper {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.many_swipers_labels-and-button {
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.many_swipers_labels {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.many_swipers_labels h3 {
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 29px;
+}
+.many_swipers_h6-number-1 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 10px;
+  border-radius: 100px;
+  color: #d00000;
+  background: #ffebeb;
+}
+
+.many_swipers_button {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 106px;
+  height: 48px;
+}
+
+.mini-swiper-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e9e8e8;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  user-select: none;
+}
+
+.many_swipers__sales-cell {
+  display: flex;
+  flex-direction: column;
+  width: 246px;
+  gap: 10px;
+  border-radius: 10px;
+}
+.sales-cell_img {
+  width: 246px;
+  height: 246px;
+}
+.sales-cell_name-and-favourite {
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.button_like {
+  display: block;
+}
+.button_like-active {
+  display: none;
+}
+
+.sales-cell_price-and-cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sales-cell_price {
+}
+.button_cart {
+}
+.sales-cell_in-stock {
+  display: flex;
+  justify-content: flex-start;
+}
+.sales-cell_in-stock-p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: $green-dark;
+}
