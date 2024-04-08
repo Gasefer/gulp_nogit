@@ -1,4 +1,6 @@
-.mini_swiper1 {
+.mini_swiper1,
+.mini_swiper2,
+.mini_swiper3 {
   width: 100%;
   height: 100%;
   max-width: 1440px;
@@ -20,7 +22,9 @@
   object-fit: cover;
 }
 
-.mini-swiper {
+.mini-swiper1,
+.mini-swiper2,
+.mini-swiper3 {
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -47,14 +51,27 @@
   font-weight: 700;
   line-height: 29px;
 }
-.many_swipers_h6-number-1 {
+.many_swipers_h6 {
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
   padding: 10px;
   border-radius: 100px;
+}
+
+.h6_hit-sales {
   color: #d00000;
   background: #ffebeb;
+}
+
+.h6_profitable-offers {
+  color: #0036f4;
+  background: #d4ddff;
+}
+
+.h6_new {
+  color: #ff7e07;
+  background: #ffe9d4;
 }
 
 .many_swipers_button {
@@ -108,14 +125,12 @@
   justify-content: space-between;
   align-items: center;
 }
-.sales-cell_price {
-}
-.button_cart {
-}
+
 .sales-cell_in-stock {
   display: flex;
   justify-content: flex-start;
 }
+
 .sales-cell_in-stock-p {
   font-size: 14px;
   font-weight: 400;
