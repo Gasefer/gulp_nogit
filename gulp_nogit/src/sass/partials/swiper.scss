@@ -1,11 +1,17 @@
-.swiper_baby {
-  color: #ffffff;
+.swiper_container {
+  max-width: calc(100% - 346px);
+  flex: 1 !important;
+  width: auto !important;
+  margin-right: 16px;
 }
 
-.swiper {
-  max-width: 1120px;
+.big-swiper {
+  max-width: max-content;
+  width: 100%;
   height: 100%;
   border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
 .swiper-slide {
@@ -19,6 +25,7 @@
 
 .swiper-slide img {
   display: block;
+  width: 100%;
   height: 100%;
 }
 

@@ -10,3 +10,4 @@
 //=require partials/send-form-smtp.js
 //=require partials/catalog.js
 //=require partials/many_swiper.js
+//=require partials/mobile_menu.js

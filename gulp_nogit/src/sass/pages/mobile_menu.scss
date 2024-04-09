@@ -1,0 +1,33 @@
+.mobile_menu {
+  background: $gray;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: -65%; /* Починається за межами екрана */
+  width: 65%; /* Займає половину екрана */
+  max-width: 495px;
+  height: 100vh; /* Займає всю висоту екрана */
+  background-color: #fff; /* Фоновий колір меню */
+  transition: left 0.3s ease; /* Анімація для відкривання/закривання */
+  z-index: 4;
+  .first-screen_catalog-list {
+    display: block;
+    top: 75px;
+    margin: 0 16px;
+    padding: 10px 0 6px 0;
+    .first-screen_catalog__a {
+      width: 100%;
+      .first-screen_catalog__item {
+        width: 100%;
+        .first-screen_catalog__p {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.mobile_menu.active {
+  left: 0; /* Показує меню при відкритті */
+  background: $gray;
+}

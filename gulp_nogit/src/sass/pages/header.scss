@@ -38,7 +38,8 @@ header {
 }
 
 .header__bottom-block {
-  margin-top: 10px;
+  padding: 7px 0;
+  margin-bottom: 7px;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -80,6 +81,8 @@ header {
 }
 
 .header__button-catalog {
+  position: relative;
+  z-index: 4;
   width: 142px;
   padding: 16px 24px;
   border-radius: 100px;

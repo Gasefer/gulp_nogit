@@ -2,6 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: calc(1vw / 19.2);
+
+  @include tablet {
+    font-size: calc(1vw / 7.71);
+  }
+
+  @include mobile {
+    font-size: calc(1vw / 3.6);
+  }
 }
 
 ::-webkit-scrollbar {
@@ -68,6 +77,10 @@ li {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0;
+}
+
+.mini-container {
+  margin: 0 16px;
 }
 
 main {

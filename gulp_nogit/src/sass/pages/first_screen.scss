@@ -1,17 +1,14 @@
 .first-screen {
+  position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 20px;
   align-items: start;
-  padding-top: 15px;
   margin-bottom: 100px;
 }
 
-.first-screen_catalog {
-  height: 575px;
-}
-
 .first-screen_catalog-list {
+  margin-left: 16px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
