@@ -3,13 +3,13 @@
 .mini_swiper3 {
   width: 100%;
   height: 100%;
-  max-width: 1440px;
+  max-width: 1440rem;
   overflow: hidden;
 }
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 18rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,20 +24,20 @@
 
 .mini-swiper1,
 .mini-swiper2 {
-  margin-bottom: 50px;
+  margin-bottom: 50rem;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 30rem;
 }
 
 .mini-swiper3 {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 30rem;
 }
 
 .many_swipers_labels-and-button {
-  height: 48px;
+  height: 48rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -49,19 +49,19 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 10rem;
 }
 .many_swipers_labels h3 {
-  font-size: 29px;
+  font-size: 29rem;
   font-weight: 700;
-  line-height: 29px;
+  line-height: 29rem;
 }
 .many_swipers_h6 {
-  font-size: 16px;
+  font-size: 16rem;
   font-weight: 600;
-  line-height: 24px;
-  padding: 10px;
-  border-radius: 100px;
+  line-height: 24rem;
+  padding: 10rem;
+  border-radius: 100rem;
 }
 
 .h6_hit-sales {
@@ -82,9 +82,9 @@
 .many_swipers_button {
   display: flex;
   flex-direction: row;
-  gap: 10px;
-  width: 106px;
-  height: 48px;
+  gap: 10rem;
+  width: 106rem;
+  height: 48rem;
 }
 
 .mini-swiper-button {
@@ -92,8 +92,8 @@
   justify-content: center;
   align-items: center;
   background: #e9e8e8;
-  width: 48px;
-  height: 48px;
+  width: 48rem;
+  height: 48rem;
   border-radius: 100%;
   user-select: none;
 }
@@ -101,16 +101,16 @@
 .many_swipers__sales-cell {
   display: flex;
   flex-direction: column;
-  width: 246px;
-  gap: 10px;
-  border-radius: 10px;
+  width: 246rem;
+  gap: 10rem;
+  border-radius: 10rem;
 }
 .sales-cell_img {
-  width: 246px;
-  height: 246px;
+  width: 246rem;
+  height: 246rem;
 }
 .sales-cell_name-and-favourite {
-  height: 48px;
+  height: 48rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -137,8 +137,8 @@
 }
 
 .sales-cell_in-stock-p {
-  font-size: 14px;
+  font-size: 14rem;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 21rem;
   color: $green-dark;
 }

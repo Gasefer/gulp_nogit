@@ -1,55 +1,57 @@
 .pre_footer {
-  margin-bottom: 40px;
+  margin-bottom: 40rem;
   width: 100%;
   justify-content: center;
   background: #caf0d2;
-  padding: 50px 0px;
-  gap: 30px;
-  border-radius: 10px;
-  opacity: 0px;
+  padding: 50rem 0;
+  gap: 30rem;
+  border-radius: 10rem;
+  opacity: 0rem;
 
   .pre_footer_block {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 20rem;
   }
 }
 
 .pre_footer__text {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 10rem;
 }
 .pre_footer__text h5 {
-  font-size: 29px;
+  font-size: 29rem;
   font-weight: 700;
-  line-height: 29px;
+  line-height: 29rem;
 }
 .pre_footer__text p {
-  font-size: 16px;
+  font-size: 16rem;
   font-weight: 400;
-  line-height: 19.2px;
+  line-height: 19.2rem;
   text-align: center;
 }
 .pre_footer__inputs {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  gap: 20rem;
 }
 
 .pre_footer-element {
-  width: 687px;
-  height: 51px;
-  padding: 16px;
-  border-radius: 100px;
+  width: 687rem;
+  height: 51rem;
+  padding: 16rem;
+  border-radius: 100rem;
   transition: all 0.3s ease-in-out;
 }
 
 .pre_footer_name,
 .pre_footer_email {
   background: #f8f8f8;
-  border: 2px solid #e9e8e8;
+  border: 2rem solid #e9e8e8;
   input:focus {
     border-color: $green-dark;
   }

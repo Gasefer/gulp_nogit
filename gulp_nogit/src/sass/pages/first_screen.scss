@@ -2,24 +2,24 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 20rem;
   align-items: start;
-  margin-bottom: 100px;
+  margin-bottom: 100rem;
 }
 
 .first-screen_catalog-list {
-  margin-left: 16px;
+  margin-left: 16rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 10px;
-  border-radius: 10px;
-  min-height: 437px;
+  padding-top: 10rem;
+  border-radius: 10rem;
+  min-height: 437rem;
 }
 
 .first-screen_catalog__a {
   position: relative;
-  width: 300px;
+  width: 300rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,18 +30,18 @@
 }
 
 .first-screen_catalog__a:hover .first-screen_catalog__p {
-  width: 200px;
+  width: 200rem;
 }
 
 .first-screen_catalog__item {
-  margin: 8px 12px;
+  margin: 8rem 12rem;
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 10rem;
 }
 
 .first-screen_catalog__p {
-  width: 208px;
+  width: 208rem;
 }
 
 .catalog_box-list {
@@ -49,17 +49,17 @@
   position: absolute;
   width: 380%;
   margin: auto 0 auto auto;
-  height: 437px;
-  top: 0px;
-  left: 300px;
+  height: 437rem;
+  top: 0rem;
+  left: 300rem;
 }
 
 .catalog_list-box {
-  margin: 0 0 0 20px;
+  margin: 0 0 0 20rem;
   width: 100%;
   background-color: $gray;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 10rem;
+  padding: 20rem;
 }
 
 .first-screen_catalog__a:hover + .catalog_box-list {
@@ -75,35 +75,35 @@
   flex-direction: column;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 10px 40px;
-  max-height: 389px;
-  max-width: 200px;
+  gap: 10rem 40rem;
+  max-height: 389rem;
+  max-width: 200rem;
 }
 .catalog_list__block {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  width: 196px;
+  gap: 4rem;
+  width: 196rem;
 }
 
 .catalog__name-block {
   color: $green-dark;
-  line-height: 19.2px;
-  font-size: 16px;
+  line-height: 19.2rem;
+  font-size: 16rem;
   font-weight: 400;
 }
 
 .catalog_list-item-box {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  max-width: 192px;
+  gap: 2rem;
+  max-width: 192rem;
 }
 
 .catalog__list-item {
-  font-size: 14px;
+  font-size: 14rem;
   font-weight: 400;
-  line-height: 16.8px;
+  line-height: 16.8rem;
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
