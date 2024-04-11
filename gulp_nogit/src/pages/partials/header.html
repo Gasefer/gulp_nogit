@@ -2,59 +2,60 @@
   <div class="bg-gray"></div>
   <div class="container">
     <div class="mini-container">
-      <div class="header-inside"></div>
-      <div class="header__upper-block">
-        <ul class="header__list">
-          <li class="header_list-item"><a href="#">Культура</a></li>
-          <li class="header_list-item"><a href="#">Прайс</a></li>
-          <li class="header_list-item"><a href="#">Акції</a></li>
-          <li class="header_list-item"><a href="#">Доставка</a></li>
-          <li class="header_list-item"><a href="#">Контакти</a></li>
-        </ul>
-        <div class="header__contacts">
-          <div class="header__phone">
-            <a href="tel:+380507411310">(050) 741-13-10</a>
-            @@include('mixins/svg-icon.html', {"name": "arrow_bottom", "class":
-            "svg_arrow-bottom__box"})
-            <div class="header__phone-block">
-              <a href="tel:+380681958018">(068) 195-80-18</a>
-              <a href="tel:+380636792601">(063) 679-26-01</a>
+      <div class="header_container">
+        <div class="header__upper-block">
+          <ul class="header__list">
+            <li class="header_list-item"><a href="#">Культура</a></li>
+            <li class="header_list-item"><a href="#">Прайс</a></li>
+            <li class="header_list-item"><a href="#">Акції</a></li>
+            <li class="header_list-item"><a href="#">Доставка</a></li>
+            <li class="header_list-item"><a href="#">Контакти</a></li>
+          </ul>
+          <div class="header__contacts">
+            <div class="header__phone">
+              <a href="tel:+380507411310">(050) 741-13-10</a>
+              @@include('mixins/svg-icon.html', {"name": "arrow_bottom",
+              "class": "svg_arrow-bottom__box"})
+              <div class="header__phone-block">
+                <a href="tel:+380681958018">(068) 195-80-18</a>
+                <a href="tel:+380636792601">(063) 679-26-01</a>
+              </div>
             </div>
+            <a href="#" class="header_feedback">Зворотній зв’язок</a>
           </div>
-          <a href="#" class="header_feedback">Зворотній зв’язок</a>
         </div>
-      </div>
-      <div class="header__bottom-block">
-        <div class="mobile_menu">
-          <!--=include mobile_menu.html-->
-        </div>
-        <a href="#" class="header__logo">
-          <img class="logo" src="./img/logo.svg" alt="logo" />
-        </a>
-        <button class="header__button-catalog">
-          <div class="svg__box x_open">
-            @@include('mixins/svg-icon.html', {"name": "menu", "class":
-            "svg-size_menu"})
+        <div class="header__bottom-block">
+          <div class="mobile_menu">
+            <!--=include mobile_menu.html-->
           </div>
-          <div class="svg__box x_close">
-            @@include('mixins/svg-icon.html', {"name": "closer", "class":
-            "svg-size_closer"})
+          <a href="#" class="header__logo">
+            <img class="logo" src="./img/logo.svg" alt="logo" />
+          </a>
+          <button class="header__button-catalog">
+            <div class="svg__box x_open">
+              @@include('mixins/svg-icon.html', {"name": "menu", "class":
+              "svg-size_menu"})
+            </div>
+            <div class="svg__box x_close">
+              @@include('mixins/svg-icon.html', {"name": "closer", "class":
+              "svg-size_closer"})
+            </div>
+            <p class="header__button-catalog-p">Каталог</p>
+          </button>
+          <input type="text" class="header__search" placeholder="Я шукаю..." />
+          <div class="header__navigation">
+            <a href="#" class="header__navigation-a">
+              @@include('mixins/svg-icon.html', {"name": "person", "class":
+              "color-black svg-size_header-person"})</a
+            ><a href="#" class="header__navigation-a">
+              @@include('mixins/svg-icon.html', {"name": "like", "class":
+              "color-black svg-size_header-like"})</a
+            ><a href="#" class="header__navigation-a">
+              @@include('mixins/svg-icon.html', {"name": "cart", "class":
+              "color-black svg-size_cart"})
+              <span class="absolute_count">100</span></a
+            >
           </div>
-          <p class="header__button-catalog-p">Каталог</p>
-        </button>
-        <input type="text" class="header__search" placeholder="Я шукаю..." />
-        <div class="header__navigation">
-          <a href="#" class="header__navigation-a">
-            @@include('mixins/svg-icon.html', {"name": "person", "class":
-            "color-black svg-size_header-person"})</a
-          ><a href="#" class="header__navigation-a">
-            @@include('mixins/svg-icon.html', {"name": "like", "class":
-            "color-black svg-size_header-like"})</a
-          ><a href="#" class="header__navigation-a">
-            @@include('mixins/svg-icon.html', {"name": "cart", "class":
-            "color-black svg-size_cart"})
-            <span class="absolute_count">100</span></a
-          >
         </div>
       </div>
     </div>

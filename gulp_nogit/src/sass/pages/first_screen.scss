@@ -4,32 +4,35 @@
   flex-direction: row;
   gap: 20rem;
   align-items: start;
-  margin-bottom: 100rem;
+}
+
+.first-screen_catalog {
+  position: relative;
+  width: 300rem;
+  height: 575rem;
 }
 
 .first-screen_catalog-list {
-  margin-left: 16rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 10rem;
+  padding-bottom: 10rem;
   border-radius: 10rem;
-  min-height: 437rem;
 }
 
-.first-screen_catalog__a {
+.first-screen_catalog__link {
   position: relative;
-  width: 300rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.first-screen_catalog__a:hover {
+.first-screen_catalog__link:hover {
   background: #e9e8e8;
 }
 
-.first-screen_catalog__a:hover .first-screen_catalog__p {
+.first-screen_catalog__link:hover .first-screen_catalog__p {
   width: 200rem;
 }
 
@@ -38,52 +41,64 @@
   display: flex;
   align-items: flex-start;
   gap: 10rem;
+  width: 100%;
+  .svg__box-margin-left {
+    margin-left: auto;
+  }
 }
 
 .first-screen_catalog__p {
   width: 208rem;
 }
 
-.catalog_box-list {
+.catalog_block-list {
   display: none;
   position: absolute;
-  width: 380%;
   margin: auto 0 auto auto;
-  height: 437rem;
   top: 0rem;
-  left: 300rem;
+  left: 100%;
+  height: 100%;
 }
 
 .catalog_list-box {
-  margin: 0 0 0 20rem;
-  width: 100%;
+  min-width: 1089rem;
   background-color: $gray;
+  display: inline-block;
+  width: max-content;
+  margin: 0 0 0 20rem;
   border-radius: 10rem;
   padding: 20rem;
+  overflow: hidden;
 }
 
-.first-screen_catalog__a:hover + .catalog_box-list {
+.first-screen_catalog__link:hover + .catalog_block-list {
   display: flex;
 }
 
-.catalog_box-list:hover {
+.catalog_block-list:hover {
   display: flex;
 }
 
 .catalog_full_list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 10rem 40rem;
-  max-height: 389rem;
-  max-width: 200rem;
+  display: block;
+  -moz-columns: auto 200rem;
+  columns: auto 200rem;
+  -moz-column-gap: 40rem;
+  column-gap: 40rem;
+  row-gap: 0;
+  border-radius: 10rem;
+  height: 100%;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: auto;
+  background: #f8f8f8;
 }
+
 .catalog_list__block {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  width: 196rem;
+  width: 230rem;
 }
 
 .catalog__name-block {

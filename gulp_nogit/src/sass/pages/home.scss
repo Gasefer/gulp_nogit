@@ -9,13 +9,11 @@
   height: 0;
 }
 
-/* Firefox */
 ::-moz-scrollbar {
   width: 0;
   height: 0;
 }
 
-/* Internet Explorer */
 *::-ms-scrollbar {
   width: 0;
   height: 0;
@@ -27,9 +25,9 @@ body {
   font-size: 16rem;
   font-weight: 400;
   line-height: 19rem;
-  letter-spacing: 0em;
+  letter-spacing: 0rem;
   text-align: left;
-  color: #121212;
+  color: $black;
 }
 
 h1,
@@ -53,7 +51,7 @@ svg {
 
 a {
   text-decoration: none;
-  color: #121212;
+  color: $black;
 }
 
 p {
@@ -65,15 +63,18 @@ li {
 }
 
 .container {
-  max-width: 1440rem;
-  margin: 0 auto;
-  padding: 0;
+  max-width: 1440px;
 }
-
 .mini-container {
   margin: 0 16rem;
 }
 
 main {
   background-color: #f8f8f8;
+}
+
+.section-home {
+  display: flex;
+  flex-direction: column;
+  gap: 100rem;
 }

@@ -1,27 +1,38 @@
-$breakpoint_md: 768px;
-$breakpoint_sm: 360px;
+$breakpoint_mobile: 320px;
+$breakpoint_tablet: 768px;
+$breakpoint_laptop: 1440px;
 
-@mixin tablet {
-  @media (max-width: $breakpoint_md) {
+@mixin mobile {
+  @media (max-width: $breakpoint_mobile) {
     @content;
   }
 }
 
-@mixin mobile {
-  @media (max-width: $breakpoint_sm) {
+@mixin tablet {
+  @media (max-width: $breakpoint_tablet) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: $breakpoint_laptop) {
     @content;
   }
 }
 
 html {
-  font-size: calc(1vw / 19.2);
-
-  @include tablet {
-    font-size: calc(1vw / 7.71);
-  }
+  font-size: 1px;
 
   @include mobile {
-    font-size: calc(1vw / 3.6);
+    font-size: calc(1vw / 3.6); // Для дуже малих екранів (XS)
+  }
+
+  @include tablet {
+    font-size: calc(1vw / 7.71); // Для середніх екранів (MD)
+  }
+
+  @include laptop {
+    font-size: calc(1vw / 14.4); // Після 1440px
   }
 }
 
