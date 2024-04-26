@@ -64,7 +64,7 @@ li {
 
 .container {
   max-width: 1440rem;
-  padding-inline: 16px;
+  padding-inline: 16rem;
 }
 
 .first-screen-shell .container {
@@ -83,4 +83,5 @@ main {
   display: flex;
   flex-direction: column;
   gap: 100rem;
+  margin-bottom: 100rem;
 }
