@@ -3,7 +3,7 @@
   width: 100%;
   justify-content: center;
   background: #caf0d2;
-  padding: 50rem 0;
+  padding: 50rem;
   gap: 30rem;
   border-radius: 10rem;
   opacity: 0rem;
@@ -21,18 +21,22 @@
   flex-direction: column;
   gap: 10rem;
 }
+
 .pre_footer__text h5 {
   font-size: 29rem;
   font-weight: 700;
   line-height: 29rem;
 }
+
 .pre_footer__text p {
   font-size: 16rem;
   font-weight: 400;
   line-height: 19.2rem;
   text-align: center;
 }
+
 .pre_footer__inputs {
+  max-width: 687rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -41,7 +45,7 @@
 }
 
 .pre_footer-element {
-  width: 687rem;
+  width: 100%;
   height: 51rem;
   padding: 16rem;
   border-radius: 100rem;

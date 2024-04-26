@@ -9,6 +9,9 @@ document
     var headerButtonCatalog = document.querySelector(".header__button-catalog");
     var xCloseElements = document.querySelectorAll(".x_close");
     var xOpenElements = document.querySelectorAll(".x_open");
+    var catalogHeaderContainer = document.querySelector(
+      ".catalog_header-container"
+    );
 
     isHeaderButtonClick = !isHeaderButtonClick;
 
@@ -26,6 +29,7 @@ document
 
       // Видаляємо клас активності з кнопки
       headerButtonCatalog.classList.remove("header__button-catalog--active");
+      catalogHeaderContainer.style.display = "none";
     } else {
       bgGray.classList.add("bg-gray--active");
       document.body.style.overflow = "hidden";
@@ -40,6 +44,7 @@ document
 
       // Додаємо клас активності кнопці
       headerButtonCatalog.classList.add("header__button-catalog--active");
+      catalogHeaderContainer.style.display = "block";
     }
 
     // Додаємо клас active до mobile_menu

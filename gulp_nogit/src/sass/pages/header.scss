@@ -1,8 +1,11 @@
 header {
   background: #f8f8f8;
   padding: 15rem 0;
-  margin-bottom: 15rem;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
 .header_container {
@@ -143,6 +146,7 @@ input:focus {
   display: flex;
   justify-content: space-between;
 }
+
 .header__navigation-link {
   position: relative;
   display: flex;
@@ -196,4 +200,15 @@ input:focus {
 
 .x_close {
   display: none;
+}
+
+.catalog_header-container {
+  position: absolute;
+  top: 135rem;
+  z-index: 5;
+  display: none;
+}
+
+.header__button-catalog--active + .catalog_header-container {
+  display: block;
 }

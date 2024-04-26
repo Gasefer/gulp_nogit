@@ -3,24 +3,24 @@
   display: none;
   position: fixed;
   top: 0;
-  left: -65%; /* Починається за межами екрана */
-  width: 65%; /* Займає половину екрана */
-  max-width: 495rem;
-  height: 100vh; /* Займає всю висоту екрана */
-  background-color: #fff; /* Фоновий колір меню */
-  transition: left 0.3s ease; /* Анімація для відкривання/закривання */
+  left: -50%;
+  width: 50%;
+  height: 100vh;
+  background-color: #fff;
+  transition: left 0.3s ease;
   z-index: 4;
   .first-screen_catalog-list {
     display: block;
     top: 75rem;
-    margin: 0 16rem;
-    padding: 10rem 0 6rem 0;
+    padding: 10rem 16rem 6rem 16rem;
     .first-screen_catalog__a {
       width: 100%;
       .first-screen_catalog__item {
         width: 100%;
+        padding: 8rem 12rem 8rem 13rem;
+        margin: 0;
         .first-screen_catalog__p {
-          width: 100%;
+          margin: auto 0;
         }
       }
     }

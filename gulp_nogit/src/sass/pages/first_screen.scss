@@ -1,15 +1,17 @@
 .first-screen {
-  position: relative;
+  padding-top: 135rem;
   display: flex;
   flex-direction: row;
   gap: 20rem;
   align-items: start;
+  .mini-container {
+    margin-right: 0;
+  }
 }
 
 .first-screen_catalog {
   position: relative;
   width: 300rem;
-  height: 575rem;
 }
 
 .first-screen_catalog-list {
@@ -55,13 +57,14 @@
   display: none;
   position: absolute;
   margin: auto 0 auto auto;
-  top: 0rem;
+  top: -1rem;
   left: 100%;
   height: 100%;
+  width: 70%;
 }
 
 .catalog_list-box {
-  min-width: 1089rem;
+  min-width: 1104rem;
   background-color: $gray;
   display: inline-block;
   width: max-content;
@@ -84,7 +87,7 @@
   -moz-columns: auto 200rem;
   columns: auto 200rem;
   -moz-column-gap: 40rem;
-  column-gap: 40rem;
+  column-gap: 41rem;
   row-gap: 0;
   border-radius: 10rem;
   height: 100%;
@@ -99,6 +102,7 @@
   flex-direction: column;
   gap: 4rem;
   width: 230rem;
+  margin-bottom: 8px;
 }
 
 .catalog__name-block {

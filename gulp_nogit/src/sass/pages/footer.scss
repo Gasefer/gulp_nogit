@@ -2,21 +2,27 @@ footer {
   background: #f8f8f8;
 }
 
-.footer__main {
+.footer_block-box {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 0;
+}
+
+.footer__main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
   align-items: flex-start;
-  margin-bottom: 61rem;
+  justify-content: space-between;
 }
 
 .footer_social-icons {
-  margin-top: 30rem;
   display: flex;
   gap: 21rem;
+  margin-top: 30rem;
 }
 
-.footer_social_a {
+.footer_social_link {
   width: 24rem;
   height: 24rem;
   display: flex;
@@ -33,8 +39,13 @@ footer {
 }
 
 .footer__main-block_logo {
-  gap: 0;
+  gap: 32rem;
   width: 129rem;
+  height: 110rem;
+  margin-right: 105.75rem;
+  img {
+    margin: 5rem 5rem 2rem 6rem;
+  }
 }
 
 .footer__main-block_cultura {
@@ -45,6 +56,7 @@ footer {
 .footer__main-block_articles {
   width: 214rem;
 }
+
 .footer_margin-top {
   margin-top: 2.5rem;
 }
@@ -61,4 +73,8 @@ footer {
 
 .footer_link-contacts_provider {
   width: 57rem;
+}
+
+.footer__bottom {
+  margin-top: 61rem;
 }
