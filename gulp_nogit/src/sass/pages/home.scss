@@ -63,8 +63,14 @@ li {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1440rem;
+  padding-inline: 16px;
 }
+
+.first-screen-shell .container {
+  padding-inline: 0;
+}
+
 .mini-container {
   margin: 0 16rem;
 }

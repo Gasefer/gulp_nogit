@@ -1,6 +1,7 @@
 $breakpoint_mobile: 320px;
 $breakpoint_tablet: 768px;
-$breakpoint_laptop: 1440px;
+$breakpoint_laptop: 1024px;
+$breakpoint_big-laptop: 1440px;
 
 @mixin mobile {
   @media (max-width: $breakpoint_mobile) {
@@ -20,19 +21,29 @@ $breakpoint_laptop: 1440px;
   }
 }
 
+@mixin big-laptop {
+  @media (max-width: $breakpoint_big-laptop) {
+    @content;
+  }
+}
+
 html {
   font-size: 1px;
 
   @include mobile {
-    font-size: calc(1vw / 3.6); // Для дуже малих екранів (XS)
+    font-size: calc(1vw / 3.6);
   }
 
   @include tablet {
-    font-size: calc(1vw / 7.71); // Для середніх екранів (MD)
+    font-size: calc(1vw / 7.68);
   }
 
   @include laptop {
-    font-size: calc(1vw / 14.4); // Після 1440px
+    font-size: calc(1vw / 10.24);
+  }
+
+  @include big-laptop {
+    font-size: calc(1vw / 14.4);
   }
 }
 
@@ -78,6 +89,7 @@ html {
     display: none;
   }
 
+  .first-screen .first-screen_catalog,
   .swiper-button-next,
   .swiper-button-prev,
   .mini-swiper-button-next1,
