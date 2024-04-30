@@ -11,7 +11,7 @@
 
 .first-screen_catalog {
   position: relative;
-  width: 300rem;
+  width: 308rem;
 }
 
 .first-screen_catalog-list {
@@ -34,10 +34,6 @@
   background: #e9e8e8;
 }
 
-.first-screen_catalog__link:hover .first-screen_catalog__p {
-  width: 200rem;
-}
-
 .first-screen_catalog__item {
   margin: 8rem 12rem;
   display: flex;
@@ -47,10 +43,6 @@
   .svg__box-margin-left {
     margin-left: auto;
   }
-}
-
-.first-screen_catalog__p {
-  width: 208rem;
 }
 
 .catalog_block-list {

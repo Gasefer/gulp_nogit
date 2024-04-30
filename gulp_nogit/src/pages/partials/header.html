@@ -30,7 +30,10 @@
         <a href="#" class="header__logo">
           <img class="logo" src="./img/logo.svg" alt="logo" />
         </a>
-        <button class="header__button-catalog">
+        <button
+          class="header__button-catalog"
+          data-target=".offcanvas-to-close"
+        >
           <div class="svg__box x_open">
             @@include('mixins/svg-icon.html', {"name": "menu", "class":
             "svg-size_menu"})

@@ -37,6 +37,25 @@ html {
   }
 }
 
+@media (hover: hover) {
+  .header_list-item a:hover,
+  .footer_link:hover {
+    color: #2a8927;
+    font-weight: 500;
+  }
+  .header__navigation-link:hover {
+    background: #e9e8e8;
+  }
+  .header__phone:hover .header__phone-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__button-catalog:hover {
+    color: $green-dark;
+  }
+}
+
 @media (max-width: $breakpoint_desktop) {
   .catalog_list-box {
     min-width: 800rem;
@@ -68,6 +87,10 @@ html {
     display: block;
   }
 
+  .header_list-item {
+    pointer-events: none;
+  }
+
   .header__button-catalog--active {
     background-color: #caf0d2;
   }
@@ -87,6 +110,12 @@ html {
     margin-right: 8rem;
   }
 
+  .header__search {
+    font-size: 14rem;
+    line-height: 21rem;
+    background-image: none;
+  }
+
   .header__navigation {
     min-width: 152rem;
   }
@@ -103,7 +132,7 @@ html {
 
   .first-screen {
     justify-content: center;
-    padding-top: 69rem;
+    padding-top: 75rem;
     gap: 0;
     .big-swiper {
       width: 100%;
@@ -138,6 +167,16 @@ html {
     display: none;
   }
 
+  .many-swipers_labels h3 {
+    font-size: 20rem;
+    line-height: 20rem;
+  }
+
+  .many-swipers_h6 {
+    font-size: 14rem;
+    line-height: 21rem;
+    white-space: nowrap;
+  }
   .mini_swiper1,
   .mini_swiper2,
   .mini_swiper3 {
@@ -158,6 +197,11 @@ html {
     display: none;
   }
 
+  .about-us_main-block h3 {
+    font-size: 24rem;
+    line-height: 24rem;
+  }
+
   .about-us {
     flex-direction: column;
   }
@@ -168,12 +212,39 @@ html {
     align-items: flex-start;
   }
 
+  .about-us_element-text h5 {
+    font-size: 18rem;
+    line-height: 18rem;
+  }
+
+  .about-us_element-text p {
+    font-size: 14rem;
+    line-height: 21rem;
+  }
+
   .pre_footer_block {
     align-items: flex-start !important;
   }
 
   .pre_footer__text {
     align-items: flex-start;
+  }
+
+  .pre_footer__text h5 {
+    font-weight: 600;
+    font-size: 20rem;
+    line-height: 20rem;
+  }
+
+  .pre_footer__text p {
+    font-size: 14rem;
+    line-height: 21rem;
+  }
+
+  .pre_footer-element {
+    height: 53rem;
+    font-size: 16rem;
+    line-height: 19.3rem;
   }
 
   .footer_block-box {
@@ -190,12 +261,24 @@ html {
       justify-content: space-between;
     }
   }
+
   .footer_social-icons {
     margin-right: 28rem;
   }
 }
 
 @media (max-width: $breakpoint_tablet) {
+  .mobile_menu {
+    left: -100%;
+    width: 100%;
+  }
+
+  .first-screen_catalog__p,
+  .header__list-mobile {
+    font-size: 14rem !important;
+    line-height: 21rem !important;
+  }
+
   .header__search {
     width: max-content;
   }
@@ -208,12 +291,39 @@ html {
     min-width: 0;
   }
 
+  .about-us_green-block h3 {
+    font-size: 18rem;
+    line-height: 18rem;
+  }
+
+  .about-us_element-text h5 {
+    font-size: 20rem;
+    font-weight: 700;
+    line-height: 20rem;
+  }
+
+  .about-us_green-block ul li {
+    font-size: 14rem;
+    line-height: 21rem;
+  }
+
   .pre_footer-element {
     width: 100%;
     margin: 0 36rem;
   }
 
+  .pre_footer__text h5 {
+    font-weight: 700;
+  }
+
   .footer__main-block_cultura {
     width: 94rem;
+  }
+
+  .footer {
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 21rem;
+    text-align: left;
   }
 }
