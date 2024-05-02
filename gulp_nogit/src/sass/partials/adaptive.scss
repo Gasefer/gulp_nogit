@@ -1,13 +1,6 @@
-$breakpoint_mobile: 319px;
 $breakpoint_tablet: 767px;
 $breakpoint_laptop: 1023px;
 $breakpoint_desktop: 1439px;
-
-@mixin mobile {
-  @media (max-width: $breakpoint_mobile) {
-    @content;
-  }
-}
 
 @mixin tablet {
   @media (max-width: $breakpoint_tablet) {
@@ -30,10 +23,6 @@ html {
 
   @include tablet {
     font-size: calc(1vw / 3.6);
-  }
-
-  @include mobile {
-    font-size: calc(1vw / 2.5);
   }
 }
 
@@ -60,6 +49,7 @@ html {
   .catalog_list-box {
     min-width: 800rem;
   }
+
   .footer__main-block_articles {
     display: none;
   }
@@ -72,6 +62,10 @@ html {
 }
 
 @media (max-width: $breakpoint_laptop) {
+  .section-home {
+    gap: 40rem;
+  }
+
   header {
     padding: 8rem 0;
     .logo {
@@ -93,6 +87,7 @@ html {
 
   .header__button-catalog--active {
     background-color: #caf0d2;
+    border: 1rem solid $gray;
   }
 
   .header__button-catalog {
@@ -125,6 +120,13 @@ html {
     display: none;
   }
 
+  .absolute_count {
+    line-height: 18rem;
+    padding: 0rem 6rem;
+    top: 4rem;
+    right: -8rem;
+  }
+
   .section-home {
     margin-bottom: 40rem;
     gap: 40rem;
@@ -148,9 +150,6 @@ html {
     max-width: 100%;
     margin-right: 0;
     height: 100%;
-  }
-  .swiper-slide {
-    width: 100% !important;
   }
 
   .swiper-slide-active {
@@ -197,12 +196,24 @@ html {
     display: none;
   }
 
+  .many-swipers__sales-cell {
+    gap: 8rem;
+  }
+
+  .sales-cell_price-and-cart p,
+  .sales-cell_name-and-favourite a {
+    font-weight: 400;
+    font-size: 14rem;
+    line-height: 21rem;
+  }
+
   .about-us_main-block h3 {
     font-size: 24rem;
     line-height: 24rem;
   }
 
   .about-us {
+    gap: 24rem;
     flex-direction: column;
   }
 
@@ -243,8 +254,8 @@ html {
 
   .pre_footer-element {
     height: 53rem;
-    font-size: 16rem;
-    line-height: 19.3rem;
+    font-size: 14rem;
+    line-height: 21rem;
   }
 
   .footer_block-box {
@@ -265,9 +276,45 @@ html {
   .footer_social-icons {
     margin-right: 28rem;
   }
+
+  .footer__bottom {
+    margin-top: 30rem;
+  }
 }
 
 @media (max-width: $breakpoint_tablet) {
+  .modal {
+    --bs-modal-width: 100%;
+  }
+  .modal-dialog {
+    margin: 0;
+  }
+  .modal-content {
+    max-width: 768rem;
+    width: 100%;
+    padding: 30rem 16rem;
+    gap: 16rem;
+    border-radius: 10rem;
+    .fs-5 {
+      font-size: 18rem !important;
+      line-height: 18rem !important;
+    }
+    .modal_feedback-prefooter-text,
+    p {
+      font-weight: 400 !important;
+      font-size: 14rem !important;
+      line-height: 21rem !important;
+    }
+    input {
+      font-weight: 400 !important;
+      font-size: 14rem !important;
+      line-height: 21rem !important;
+    }
+  }
+  .section-home {
+    gap: 32rem;
+  }
+
   .mobile_menu {
     left: -100%;
     width: 100%;
@@ -285,6 +332,14 @@ html {
 
   .link_close-mobile {
     display: none;
+  }
+
+  .h6_hit-sales {
+    background: #ffe9d4;
+  }
+
+  .about-us {
+    gap: 32rem;
   }
 
   .about-us_green-block {
@@ -307,6 +362,10 @@ html {
     line-height: 21rem;
   }
 
+  .pre_footer {
+    padding: 30rem 20rem;
+  }
+
   .pre_footer-element {
     width: 100%;
     margin: 0 36rem;
@@ -314,6 +373,27 @@ html {
 
   .pre_footer__text h5 {
     font-weight: 700;
+  }
+
+  .mobile-bottom-block {
+    padding: 0;
+  }
+
+  .mobile-bottom_secondary-box {
+    display: block;
+  }
+
+  .mobile-bottom_main-box {
+    padding: 16rem;
+
+    flex-direction: column !important;
+    gap: 32rem;
+    .header__list-mobile {
+      gap: 16rem;
+    }
+    .mobile-bottom-block__contacts {
+      align-items: flex-start;
+    }
   }
 
   .footer__main-block_cultura {

@@ -1,7 +1,7 @@
 .mini_swiper1,
 .mini_swiper2,
 .mini_swiper3 {
-  width: 100%;
+  width: 101%;
   height: 100%;
   max-width: 1440rem;
   overflow: hidden;
@@ -104,11 +104,10 @@
   width: 246rem;
   gap: 10rem;
   border-radius: 10rem;
+  font-size: 16rem;
+  line-height: 19.2rem;
 }
-.sales-cell_img {
-  width: 246rem;
-  height: 246rem;
-}
+
 .sales-cell_name-and-favourite {
   height: 48rem;
   display: flex;
@@ -120,6 +119,7 @@
 .button_like {
   display: block;
 }
+
 .button_like-active {
   display: none;
 }

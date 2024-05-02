@@ -160,19 +160,44 @@
     <!--=include mobile_menu-wripper/mobile_menu-wripper3.html-->
     <!--=include mobile_menu-wripper/mobile_menu-wripper4.html-->
     <div class="mobile-bottom-block">
-      <ul class="header__list header__list-mobile">
-        <li class="header_list-item"><a href="#">Культура</a></li>
-        <li class="header_list-item"><a href="#">Прайс</a></li>
-        <li class="header_list-item"><a href="#">Акції</a></li>
-        <li class="header_list-item"><a href="#">Доставка</a></li>
-        <li class="header_list-item"><a href="#">Контакти</a></li>
-      </ul>
-      <div class="mobile-bottom-block__contacts">
-        <div class="mobile-bottom-numbers">
-          <a href="tel:+380507411310">(050) 741-13-10</a>
-          <a href="tel:+380681958018">(068) 195-80-18</a>
+      <div class="mobile-bottom_secondary-box">
+        <a href="#" class="mobile-bottom_secondary-box-item">
+          <div class="link_menu-mobile">
+            @@include('mixins/svg-icon.html', {"name": "person", "class":
+            "color-black svg-size_header-person"})
+          </div>
+          <p>Особисті дані</p>
+        </a>
+        <a href="#" class="mobile-bottom_secondary-box-item">
+          <div class="link_menu-mobile">
+            @@include('mixins/svg-icon.html', {"name": "like", "class":
+            "color-black svg-size_header-like"})
+          </div>
+          <p>Вибране</p>
+        </a>
+      </div>
+      <div class="mobile-bottom_main-box">
+        <ul class="header__list header__list-mobile">
+          <li class="header_list-item"><a href="#">Культура</a></li>
+          <li class="header_list-item"><a href="#">Прайс</a></li>
+          <li class="header_list-item"><a href="#">Акції</a></li>
+          <li class="header_list-item"><a href="#">Доставка</a></li>
+          <li class="header_list-item"><a href="#">Контакти</a></li>
+        </ul>
+        <div class="mobile-bottom-block__contacts">
+          <div class="mobile-bottom-numbers">
+            <a href="tel:+380507411310">(050) 741-13-10</a>
+            <a href="tel:+380681958018">(068) 195-80-18</a>
+          </div>
+          <a
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_feedback"
+            href="#"
+            class="header_feedback"
+            >Зворотній зв’язок</a
+          >
         </div>
-        <a href="#" class="header_feedback">Зворотній зв’язок</a>
       </div>
     </div>
   </div>

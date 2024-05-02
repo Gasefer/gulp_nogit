@@ -1,0 +1,55 @@
+<div
+  class="modal fade"
+  id="modal_feedback"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <form class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal_feedback-header">
+        <div class="modal_feedback-header_text">
+          <h1 class="modal-title fs-5" id="modal_feedback-label">
+            Зворотній зв’язок
+          </h1>
+          <button
+            type="button"
+            class="btn-close modal_feedback-button-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <p>Ми зв’яжемось з вами протягом 5хв</p>
+      </div>
+      <div class="modal_feedback-phone">
+        <p>Телефон <span>*</span></p>
+        <input
+          class="form-group__input rounded-pill"
+          type="tel"
+          placeholder="+38 "
+          inputmode="numeric"
+          data-inputmask="'mask': '+38 (099) 999-99-99'"
+        />
+      </div>
+      <div class="modal_feedback-name">
+        <p>Ім’я</p>
+        <input
+          class="form-group__input rounded-pill"
+          type="name"
+          placeholder="Олена"
+          data-inputmask="'mask': 'mask': '+38 (099) 999-99-99'"
+        />
+      </div>
+      <div class="modal_feedback-prefooter-text">
+        “Відправляючи форму ви погоджуєтесь на
+        <a href="#">Умови використання</a> та
+        <a href="#">Політику конфіденційності</a>.”
+      </div>
+      <div class="modal_feedback-footer">
+        <button type="button" class="btn btn-primary">
+          Отримати консультацію
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

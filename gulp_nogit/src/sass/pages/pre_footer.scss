@@ -1,12 +1,9 @@
 .pre_footer {
   margin-bottom: 40rem;
   width: 100%;
-  justify-content: center;
   background: #caf0d2;
   padding: 50rem;
-  gap: 30rem;
   border-radius: 10rem;
-  opacity: 0rem;
 
   .pre_footer_block {
     display: flex;
@@ -50,6 +47,8 @@
   padding: 16rem;
   border-radius: 100rem;
   transition: all 0.3s ease-in-out;
+  font-size: 16rem;
+  line-height: 19.3rem;
 }
 
 .pre_footer_name,
@@ -61,6 +60,9 @@
   }
 }
 .pre_footer-button {
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 24rem;
   background-color: #2a8927;
   color: #f8f8f8;
   border: none;

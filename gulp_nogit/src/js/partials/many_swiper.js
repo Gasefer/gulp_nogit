@@ -1,98 +1,58 @@
 var mini_swiper1 = new Swiper(".mini_swiper1", {
-  slidesPerView: 5,
-  spaceBetween: 52.5,
+  slidesPerView: 2,
+  spaceBetween: 16,
+  breakpoints: {
+    767: {
+      slidesPerView: 4,
+      spaceBetween: 37,
+    },
+    1023: {
+      slidesPerView: 5,
+      spaceBetween: 52.5,
+    },
+  },
   navigation: {
     nextEl: ".mini-swiper-button-next1",
     prevEl: ".mini-swiper-button-prev1",
   },
-  slidesPerView: calculateSlidesPerView(),
-  spaceBetween: calculateSpaceBetween(),
-});
-function calculateSlidesPerView() {
-  if (window.innerWidth <= 1023) {
-    return 4;
-  } else {
-    return 5;
-  }
-}
-
-function calculateSpaceBetween() {
-  if (window.innerWidth <= 1023) {
-    return 37;
-  } else {
-    return 52.5;
-  }
-}
-
-window.addEventListener("resize", function () {
-  mini_swiper1.params.slidesPerView = calculateSlidesPerView();
-  mini_swiper1.params.spaceBetween = calculateSpaceBetween();
-  mini_swiper1.update();
 });
 
 var mini_swiper2 = new Swiper(".mini_swiper2", {
-  slidesPerView: 5,
-  spaceBetween: 52.5,
+  slidesPerView: 2,
+  spaceBetween: 16,
+  breakpoints: {
+    767: {
+      slidesPerView: 4,
+      spaceBetween: 37,
+    },
+    1023: {
+      slidesPerView: 5,
+      spaceBetween: 52.5,
+    },
+  },
   navigation: {
     nextEl: ".mini-swiper-button-next2",
     prevEl: ".mini-swiper-button-prev2",
   },
-  slidesPerView: calculateSlidesPerView(),
-  spaceBetween: calculateSpaceBetween(),
-});
-function calculateSlidesPerView() {
-  if (window.innerWidth <= 1023) {
-    return 4;
-  } else {
-    return 5;
-  }
-}
-
-function calculateSpaceBetween() {
-  if (window.innerWidth <= 1023) {
-    return 37;
-  } else {
-    return 52.5;
-  }
-}
-
-window.addEventListener("resize", function () {
-  mini_swiper1.params.slidesPerView = calculateSlidesPerView();
-  mini_swiper1.params.spaceBetween = calculateSpaceBetween();
-  mini_swiper1.update();
 });
 
 var mini_swiper3 = new Swiper(".mini_swiper3", {
-  slidesPerView: 5,
-  spaceBetween: 52.5,
+  slidesPerView: 2,
+  spaceBetween: 16,
+  breakpoints: {
+    767: {
+      slidesPerView: 4,
+      spaceBetween: 37,
+    },
+    1023: {
+      slidesPerView: 5,
+      spaceBetween: 52.5,
+    },
+  },
   navigation: {
     nextEl: ".mini-swiper-button-next3",
     prevEl: ".mini-swiper-button-prev3",
   },
-
-  slidesPerView: calculateSlidesPerView(),
-  spaceBetween: calculateSpaceBetween(),
-});
-function calculateSlidesPerView() {
-  if (window.innerWidth <= 1023) {
-    return 4;
-  } else {
-    return 5;
-  }
-}
-
-function calculateSpaceBetween() {
-  if (window.innerWidth <= 1023) {
-    return 37;
-  } else {
-    return 52.5;
-  }
-}
-
-window.addEventListener("resize", function () {
-  mini_swiper1.params.slidesPerView = calculateSlidesPerView();
-  mini_swiper1.params.spaceBetween = calculateSpaceBetween();
-  mini_swiper1.update();
 });
 
 function updateButtonStyles1() {
