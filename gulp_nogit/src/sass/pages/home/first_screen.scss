@@ -1,9 +1,8 @@
 .first-screen {
-  padding-top: 135rem;
   display: flex;
   flex-direction: row;
   gap: 20rem;
-  align-items: start;
+  align-items: flex-start;
   .mini-container {
     margin-right: 0;
   }

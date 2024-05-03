@@ -1,3 +1,47 @@
+$green-dark: #2a8927;
+$red: #ff4444;
+$black: #121212;
+$gray: #f8f8f8;
+
+.color-black {
+  fill: $black;
+}
+
+.color-red {
+  fill: $red;
+}
+
+.color-green {
+  fill: $green-dark;
+}
+
+.svg__box {
+  width: 24rem;
+  height: 24rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg__big-box {
+  width: 48rem;
+  height: 48rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg_arrow__box {
+  width: 6.25rem !important;
+  height: 11rem !important;
+}
+
+.svg_arrow-bottom__box {
+  margin-left: 5rem;
+  width: 11rem;
+  height: 6.25rem;
+}
+
 header {
   background: #f8f8f8;
   padding: 15rem 0;
@@ -32,7 +76,6 @@ header {
 
 .header_list-item a,
 .footer_link {
-  color: $black;
   transition: color 0.3s ease;
 }
 
