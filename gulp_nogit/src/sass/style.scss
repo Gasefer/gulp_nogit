@@ -1,7 +1,6 @@
 @import "partials/icons.scss";
 @import "pages/header.scss";
 
-@import "partials/svg_sprite.scss";
 @import "partials/swiper.scss";
 @import "partials/modal_feedback.scss";
 @import "pages/mobile_menu.scss";
@@ -12,7 +11,8 @@
 @import "pages/home/about-us.scss";
 
 @import "pages/catalog/catalog.scss";
-
+@import "pages/catalog/breadcrums.scss";
+@import "pages/catalog/catalog-grid-content.scss";
 @import "pages/pre_footer.scss";
 @import "pages/footer.scss";
 

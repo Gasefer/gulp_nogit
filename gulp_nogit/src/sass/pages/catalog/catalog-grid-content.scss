@@ -1,0 +1,26 @@
+.catalog-grid-content {
+  display: flex;
+  flex-direction: row;
+  gap: 22rem 22rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-bottom: 100rem;
+}
+
+.grid-content-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+  border-radius: 20rem;
+  flex-wrap: wrap;
+  min-width: 160rem;
+  max-width: 160rem;
+}
+
+.grid-content-item-text {
+  font-size: 16rem;
+  line-height: 19.2rem;
+  font-weight: 400;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}

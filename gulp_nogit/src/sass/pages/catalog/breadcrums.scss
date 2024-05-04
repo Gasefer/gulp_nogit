@@ -1,0 +1,23 @@
+.breadcrums_and_title {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  h1 {
+    font-size: 36rem;
+    line-height: 36rem;
+    font-weight: 700;
+  }
+}
+
+.breadcrums-box {
+  --bs-breadcrumb-divider: ">";
+  li {
+    font-size: 14rem;
+    line-height: 16.8rem;
+    color: #4c4c4c;
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  padding: 0 3rem;
+}

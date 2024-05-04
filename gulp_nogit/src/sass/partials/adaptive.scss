@@ -46,12 +46,25 @@ html {
 }
 
 @media (max-width: $breakpoint_desktop) {
+  .container {
+    padding-inline: 16rem;
+  }
+
   .catalog_list-box {
     min-width: 800rem;
   }
 
+  .first-screen .mini-container {
+    margin: 0 16rem;
+  }
+
   .footer__main-block_articles {
     display: none;
+  }
+
+  .catalog-grid-content {
+    flex-wrap: nowrap;
+    overflow: scroll;
   }
 }
 
