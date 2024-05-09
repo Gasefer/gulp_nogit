@@ -2,6 +2,7 @@ $green-dark: #2a8927;
 $red: #ff4444;
 $black: #121212;
 $gray: #f8f8f8;
+$dark-gray: #4c4c4c;
 
 .color-black {
   fill: $black;
@@ -13,6 +14,14 @@ $gray: #f8f8f8;
 
 .color-green {
   fill: $green-dark;
+}
+
+.color-gray {
+  fill: $gray;
+}
+
+.color-dark-gray {
+  fill: $dark-gray;
 }
 
 .svg__box {
@@ -141,4 +150,14 @@ $gray: #f8f8f8;
 .svg-size_cart {
   width: 24rem;
   height: 24rem;
+}
+
+.svg-size_checkmark {
+  width: 18rem;
+  height: 14rem;
+}
+
+.svg-size_sort-elements-closer {
+  width: 11.5rem;
+  height: 11.5rem;
 }

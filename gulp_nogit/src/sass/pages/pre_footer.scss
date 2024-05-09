@@ -54,7 +54,7 @@
 .pre_footer_name,
 .pre_footer_email {
   background: #f8f8f8;
-  border: 2rem solid #e9e8e8;
+  border: 2rem solid #f8f8f8;
   input:focus {
     border-color: $green-dark;
   }
@@ -70,7 +70,3 @@
     background-color: #4a9d23;
   }
 }
-
-// .pre_footer-button:hover {
-//   background-color: #f8f8f8;
-// }

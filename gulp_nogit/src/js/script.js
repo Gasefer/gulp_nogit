@@ -12,3 +12,4 @@
 //=require partials/catalog.js
 //=require partials/many_swiper.js
 //=require partials/mobile_menu.js
+//=require partials/sort-range.js
