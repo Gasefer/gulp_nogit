@@ -258,7 +258,7 @@ html {
   }
 
   .pre_footer__text h5 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20rem;
     line-height: 20rem;
   }
@@ -295,6 +295,9 @@ html {
 
   .footer__bottom {
     margin-top: 30rem;
+  }
+  .catalog-sort-menu-container {
+    display: none;
   }
 }
 
