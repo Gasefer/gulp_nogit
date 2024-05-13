@@ -1,6 +1,8 @@
 .mini_swiper1,
 .mini_swiper2,
-.mini_swiper3 {
+.mini_swiper3,
+.mini_swiper4,
+.mini_swiper5 {
   width: 101%;
   height: 100%;
   max-width: 1440rem;
@@ -23,14 +25,11 @@
 }
 
 .mini-swiper1,
-.mini-swiper2 {
+.mini-swiper2,
+.mini-swiper3,
+.mini-swiper4,
+.mini-swiper5 {
   margin-bottom: 52rem;
-  display: flex;
-  flex-direction: column;
-  gap: 30rem;
-}
-
-.mini-swiper3 {
   display: flex;
   flex-direction: column;
   gap: 30rem;
@@ -140,4 +139,12 @@
   font-weight: 400;
   line-height: 21rem;
   color: $green-dark;
+}
+
+.mini-swiper4 {
+  margin: 40rem 0 80rem 0;
+}
+
+.swiper-button-disabled {
+  opacity: 50%;
 }
