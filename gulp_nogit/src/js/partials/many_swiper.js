@@ -93,20 +93,6 @@ var mini_swiper5 = new Swiper(".mini_swiper5", {
   },
 });
 
-mini_swiper1.on("slideChange", updateButtonStyles1);
-mini_swiper2.on("slideChange", updateButtonStyles2);
-mini_swiper3.on("slideChange", updateButtonStyles3);
-mini_swiper3.on("slideChange", updateButtonStyles4);
-mini_swiper3.on("slideChange", updateButtonStyles5);
-
-document.addEventListener("DOMContentLoaded", function () {
-  updateButtonStyles1(),
-    updateButtonStyles2(),
-    updateButtonStyles3(),
-    updateButtonStyles4(),
-    updateButtonStyles5();
-});
-
 // Отримуємо кнопку "like"
 var likeButtons = document.querySelectorAll(".like-button");
 

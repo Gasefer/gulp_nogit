@@ -13,4 +13,6 @@
 //=require partials/many_swiper.js
 //=require partials/mobile_menu.js
 //=require partials/sort-range.js
+//=require partials/sort-range-mobile.js
 //=require partials/catalog_pagination.js
+//=require partials/offcanvas_scrolling.js

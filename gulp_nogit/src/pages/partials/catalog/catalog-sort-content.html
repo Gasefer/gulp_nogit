@@ -3,35 +3,88 @@
     <!--=include catalog-sort-menu.html-->
   </div>
   <div class="catalog-sort-main-content">
-    <div class="sort-content-sorting">
-      <h5>Сортування:</h5>
-      <input
-        type="radio"
-        class="btn-check"
-        name="options-base"
-        id="sorting-option1"
-        autocomplete="off"
-        checked
-      />
-      <label class="btn" for="sorting-option1">за популярністю</label>
+    <div class="sort-content-filter-and-sorting">
+      <div class="sort-content-filter">
+        <button
+          class="btn btn-primary btn__filter"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasSortMenu"
+          aria-controls="offcanvasSortMenu"
+        >
+          <h5>Фільтр</h5>
+          <div class="svg__box">
+            @@include('mixins/svg-icon.html', {"name": "filter", "class":
+            "svg_arrow-filter color-gray"})
+          </div>
+        </button>
 
-      <input
-        type="radio"
-        class="btn-check"
-        name="options-base"
-        id="sorting-option2"
-        autocomplete="off"
-      />
-      <label class="btn" for="sorting-option2">дешевші</label>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasSortMenu"
+          aria-labelledby="offcanvasSortMenuLabel"
+        >
+          <div class="offcanvas-header">
+            <div class="svg__box">
+              <button
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                id="sortCloseMenuButton1"
+              >
+                @@include('mixins/svg-icon.html', {"name": "arrow_left",
+                "class": "color-black svg_arrow__box"})
+              </button>
+            </div>
+            <label
+              class="offcanvas-title"
+              id="offcanvasExampleLabel"
+              for="sortCloseMenuButton1"
+            >
+              Фільтр
+            </label>
+          </div>
+          <div class="offcanvas-body">
+            <div class="catalog-sort-menu-container">
+              <!--=include catalog-sort-menu-mobile.html-->
+            </div>
+          </div>
+          <div class="sort-mobile-menu-button-box">
+            <button class="button_filters-reset">Скинути фільтри</button>
+          </div>
+        </div>
+      </div>
+      <div class="sort-content-sorting">
+        <h5>Сортування:</h5>
+        <input
+          type="radio"
+          class="btn-check"
+          name="options-base"
+          id="sorting-option1"
+          autocomplete="off"
+          checked
+        />
+        <label class="btn" for="sorting-option1">за популярністю</label>
 
-      <input
-        type="radio"
-        class="btn-check"
-        name="options-base"
-        id="sorting-option3"
-        autocomplete="off"
-      />
-      <label class="btn" for="sorting-option3">дорожчі</label>
+        <input
+          type="radio"
+          class="btn-check"
+          name="options-base"
+          id="sorting-option2"
+          autocomplete="off"
+        />
+        <label class="btn" for="sorting-option2">дешевші</label>
+
+        <input
+          type="radio"
+          class="btn-check"
+          name="options-base"
+          id="sorting-option3"
+          autocomplete="off"
+        />
+        <label class="btn" for="sorting-option3">дорожчі</label>
+      </div>
     </div>
     <div class="catalog-market">
       <div class="many-swipers__sales-cell">

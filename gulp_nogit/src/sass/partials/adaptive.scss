@@ -61,11 +61,6 @@ html {
   .footer__main-block_articles {
     display: none;
   }
-
-  .catalog-grid-content {
-    flex-wrap: nowrap;
-    overflow: scroll;
-  }
 }
 
 @media (max-width: 1138px) {
@@ -297,8 +292,87 @@ html {
   .footer__bottom {
     margin-top: 30rem;
   }
+
+  .catalog {
+    gap: 32rem;
+  }
+
+  .catalog .container-catalog-grid-content .container {
+    padding: 0 0 0 16rem;
+  }
+
+  .breadcrums_and_title {
+    gap: 8rem;
+    .breadcrumb {
+      .breadcrumb-item a {
+        word-wrap: break-word;
+      }
+    }
+    h1 {
+      font-size: 24rem;
+      line-height: 24rem;
+    }
+  }
+
+  .catalog-grid-content {
+    display: flex;
+    gap: 16rem;
+    overflow: scroll;
+    font-size: 14rem;
+    line-height: 21rem;
+    .grid-content-item {
+      gap: 8rem;
+      .grid-content-item-text {
+        font-size: 14rem;
+        line-height: 21rem;
+        -webkit-line-clamp: 3;
+      }
+      .grid-content-item-image {
+        width: 120rem;
+        height: 120rem;
+        img {
+          width: 120rem;
+          height: 120rem;
+        }
+      }
+    }
+  }
+
   .catalog-sort-menu-container {
     display: none;
+  }
+
+  .sort-content-filter .catalog-sort-menu-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .sort-content-filter-and-sorting {
+    .btn__filter {
+      display: flex;
+      align-items: center;
+      gap: 6rem;
+      padding: 16rem 24rem;
+      border-radius: 100rem;
+      background-color: $green-dark;
+      border: none;
+    }
+  }
+
+  .catalog-market {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(calc((100% - 3 * 37rem) / 4), 1fr)
+    );
+    gap: 24rem 37rem;
+    .many-swipers__sales-cell .sales-cell_img {
+      width: 156rem;
+      height: 156rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
 
@@ -425,5 +499,18 @@ html {
     font-weight: 400;
     line-height: 21rem;
     text-align: left;
+  }
+
+  .catalog-market {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(calc((100% - 1 * 16rem) / 2), 1fr)
+    );
+    gap: 16rem;
+  }
+
+  .previous-arrow,
+  .next-arrow {
+    display: none;
   }
 }
