@@ -374,6 +374,13 @@ html {
       }
     }
   }
+  .sort-content-sorting-input {
+    display: none;
+  }
+
+  .sort-content-sorting-select {
+    display: block;
+  }
 }
 
 @media (max-width: $breakpoint_tablet) {

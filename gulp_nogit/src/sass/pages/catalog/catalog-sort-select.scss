@@ -1,0 +1,68 @@
+.sort-content-sorting-select {
+  position: relative;
+}
+
+#dropdown-btn {
+  width: 160rem;
+  height: 100%;
+  font-size: 16rem;
+  line-height: 24rem;
+  padding: 16rem;
+  background: var(--Standart-color-White, #f8f8f8);
+  border: 2rem solid #2a8927;
+  border-radius: 100rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h5 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 140rem;
+    overflow: hidden;
+    color: #2a8927;
+    font-size: 16rem;
+    font-weight: 500;
+    line-height: 24rem;
+  }
+}
+
+#select-sort {
+  width: 160rem;
+  padding: 0;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 70rem;
+  background-color: #fff;
+  border: 2rem solid #2a8927;
+  border-radius: 20rem;
+  li {
+    width: 160rem;
+    font-size: 16rem;
+    font-weight: 500;
+    line-height: 24rem;
+    padding: 16rem;
+    cursor: pointer;
+    overflow: hidden;
+    border-left: 2rem solid #2a8927;
+    border-right: 2rem solid #2a8927;
+    white-space: nowrap;
+  }
+  :first-child {
+    border-radius: 20rem 20rem 0 0;
+  }
+  :last-child {
+    border-radius: 0 0 20rem 20rem;
+  }
+}
+
+#select-sort li:hover {
+  background: var(--Standart-color-Light-Gray, #e9e8e8);
+}
+
+.sort-content-sorting-select {
+  display: none;
+}

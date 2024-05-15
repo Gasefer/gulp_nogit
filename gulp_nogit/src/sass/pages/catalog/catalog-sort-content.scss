@@ -333,9 +333,7 @@ input[type="range"] {
 
 .sort-content-sorting {
   display: flex;
-  flex-direction: row;
-  height: min-content;
-  align-content: center;
+  align-items: center;
   h5 {
     margin: auto 0;
     font-size: 16rem;
@@ -360,6 +358,13 @@ input[type="range"] {
     background: #e9e8e8;
     color: #4c4c4c;
   }
+}
+
+.sort-content-sorting-input {
+  display: flex;
+  flex-direction: row;
+  height: min-content;
+  align-content: center;
 }
 
 .sort-mobile-menu-button-box {

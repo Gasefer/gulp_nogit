@@ -16,3 +16,4 @@
 //=require partials/sort-range-mobile.js
 //=require partials/catalog_pagination.js
 //=require partials/offcanvas_scrolling.js
+//=require partials/catalog-sort-select.js
