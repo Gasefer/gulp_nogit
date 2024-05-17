@@ -1,5 +1,5 @@
-const totalPages = 10; // Change this value to your total number of pages
-let currentPage = 1; // Change this value to the current active page
+const totalPages = 100; // Change this value to your total number of pages
+let currentPage = 10; // Change this value to the current active page
 
 // Function to generate pagination dynamically
 function generatePagination() {

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   dropdownList.addEventListener("click", function (e) {
     if (e.target.tagName === "LI") {
-      dropdownBtn.querySelector("h5").textContent = e.target.textContent; // Оновлення тексту в <h5>
+      dropdownBtn.querySelector("span").textContent = e.target.textContent; // Оновлення тексту в <h5>
       dropdownList.style.display = "none";
     }
   });

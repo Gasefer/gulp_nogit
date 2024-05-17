@@ -30,7 +30,6 @@ html {
   .header_list-item a:hover,
   .footer_link:hover {
     color: #2a8927;
-    font-weight: 500;
   }
   .header__navigation-link:hover {
     background: #e9e8e8;
@@ -71,7 +70,7 @@ html {
 
 @media (max-width: $breakpoint_laptop) {
   .padding-from-header {
-    padding-top: 75rem;
+    padding-top: 77rem;
   }
 
   .section-home {
@@ -108,6 +107,14 @@ html {
     height: 53rem;
   }
 
+  .header-input-container {
+    margin-right: 8rem;
+  }
+
+  .absolute-search {
+    display: none;
+  }
+
   .header__bottom-block {
     gap: 0;
   }
@@ -141,7 +148,7 @@ html {
 
   .section-home {
     margin-bottom: 40rem;
-    gap: 40rem;
+    gap: 36rem;
   }
 
   .first-screen {
@@ -177,6 +184,10 @@ html {
     display: none;
   }
 
+  .many-swipers {
+    gap: 38rem;
+  }
+
   .many-swipers_labels h3 {
     font-size: 20rem;
     line-height: 20rem;
@@ -195,8 +206,11 @@ html {
   }
 
   .mini-swiper1,
-  .mini-swiper2 {
-    margin-bottom: 40rem;
+  .mini-swiper2,
+  .mini-swiper3,
+  .mini-swiper4,
+  .mini-swiper5 {
+    gap: 11rem;
   }
 
   .mini-swiper-button-next1,
@@ -212,11 +226,24 @@ html {
     gap: 8rem;
   }
 
+  .sales-cell_price-and-cart,
+  .sales-cell_name-and-favourite {
+    height: 42rem;
+  }
+
+  .sales-cell_price-and-cart {
+    align-items: flex-end;
+  }
+
   .sales-cell_price-and-cart p,
   .sales-cell_name-and-favourite a {
     font-weight: 400;
     font-size: 14rem;
     line-height: 21rem;
+  }
+
+  .about-us {
+    margin-top: 3rem;
   }
 
   .about-us_main-block h3 {
@@ -233,6 +260,11 @@ html {
     padding: 16rem;
     display: flex;
     align-items: flex-start;
+    gap: 16rem;
+  }
+
+  .about-us-margin-bottom {
+    margin: 30rem 0 15rem 0;
   }
 
   .about-us_element-text h5 {
@@ -243,6 +275,14 @@ html {
   .about-us_element-text p {
     font-size: 14rem;
     line-height: 21rem;
+  }
+
+  .about-us_green-block ul li {
+    line-height: 20rem;
+  }
+
+  .pre_footer {
+    margin-bottom: 40rem;
   }
 
   .pre_footer_block {
@@ -259,9 +299,21 @@ html {
     line-height: 20rem;
   }
 
+  .pre_footer__text_desc {
+    display: none;
+  }
+
+  .pre_footer__text_mob {
+    display: block;
+  }
+
   .pre_footer__text p {
     font-size: 14rem;
     line-height: 21rem;
+  }
+
+  .pre_footer-button {
+    height: 56rem !important;
   }
 
   .pre_footer-element {
@@ -276,7 +328,7 @@ html {
     .footer__main-block_logo {
       width: 100%;
       margin-right: 28rem;
-      height: 89rem;
+      height: 56rem;
       display: flex;
       flex-direction: row;
       gap: 0;
@@ -285,8 +337,27 @@ html {
     }
   }
 
+  .footer__bottom,
+  .footer_block-box {
+    font-size: 14rem;
+    line-height: 21rem;
+  }
+
   .footer_social-icons {
-    margin-right: 28rem;
+    margin-right: 31rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer__main-block_cultura {
+    width: max-content;
+  }
+
+  .footer__main-block_conditions {
+    margin-right: -3rem;
+  }
+
+  .footer_link-contacts_provider {
+    width: 50rem;
   }
 
   .footer__bottom {
@@ -374,13 +445,6 @@ html {
       }
     }
   }
-  .sort-content-sorting-input {
-    display: none;
-  }
-
-  .sort-content-sorting-select {
-    display: block;
-  }
 }
 
 @media (max-width: $breakpoint_tablet) {
@@ -412,8 +476,62 @@ html {
       line-height: 21rem !important;
     }
   }
+
   .section-home {
-    gap: 32rem;
+    gap: 28rem;
+    margin-bottom: 32rem;
+  }
+
+  .many-swipers {
+    gap: 36rem;
+  }
+
+  .mini-swiper1,
+  .mini-swiper2,
+  .mini-swiper3,
+  .mini-swiper4,
+  .mini-swiper5 {
+    gap: 13rem;
+  }
+
+  .about-us_main-block {
+    gap: 24rem;
+  }
+
+  .about-us-margin-bottom {
+    margin: 32rem 0;
+  }
+
+  .about-us_green-block ul {
+    gap: 8rem;
+  }
+
+  .pre_footer__text_desc {
+    display: block;
+  }
+
+  .pre_footer__text_mob {
+    display: none;
+  }
+
+  .pre_footer__text p {
+    text-align: start;
+  }
+
+  .pre_footer {
+    margin-bottom: 51rem;
+  }
+
+  .pre_footer-element {
+    padding: 16rem 14rem;
+  }
+
+  .footer_social-icons {
+    margin-right: 3rem;
+  }
+
+  .footer__main-block_conditions {
+    margin-right: -10rem;
   }
 
   .mobile_menu {
@@ -428,7 +546,11 @@ html {
   }
 
   .header__search {
-    width: max-content;
+    width: 211rem;
+  }
+
+  .header-input-container {
+    margin-right: 0;
   }
 
   .link_close-mobile {
@@ -440,7 +562,7 @@ html {
   }
 
   .about-us {
-    gap: 32rem;
+    gap: 30rem;
   }
 
   .about-us_green-block {
@@ -519,5 +641,12 @@ html {
   .previous-arrow,
   .next-arrow {
     display: none;
+  }
+  .sort-content-sorting-input {
+    display: none;
+  }
+
+  .sort-content-sorting-select {
+    display: block;
   }
 }

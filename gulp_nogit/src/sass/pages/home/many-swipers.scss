@@ -24,12 +24,17 @@
   object-fit: cover;
 }
 
+.many-swipers {
+  display: flex;
+  flex-direction: column;
+  gap: 50rem;
+}
+
 .mini-swiper1,
 .mini-swiper2,
 .mini-swiper3,
 .mini-swiper4,
 .mini-swiper5 {
-  margin-bottom: 52rem;
   display: flex;
   flex-direction: column;
   gap: 30rem;

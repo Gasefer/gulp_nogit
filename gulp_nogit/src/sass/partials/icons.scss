@@ -40,13 +40,17 @@ $dark-gray: #4c4c4c;
   align-items: center;
 }
 
+.svg_size-search {
+  width: 19.2rem;
+  height: 19.2rem;
+}
+
 .svg_arrow__box {
   width: 6.25rem !important;
   height: 11rem !important;
 }
 
 .svg_arrow-bottom__box {
-  margin-left: 5rem;
   width: 11rem;
   height: 6.25rem;
 }
@@ -114,7 +118,7 @@ $dark-gray: #4c4c4c;
 }
 
 .svg-size_footer-mail {
-  width: 19rem;
+  width: 19.2rem;
   height: 15rem;
 }
 
@@ -138,13 +142,13 @@ $dark-gray: #4c4c4c;
   height: 20.47rem;
 }
 .svg-size_header-person {
-  width: 19rem;
-  height: 20rem;
+  width: 24rem;
+  height: 22rem;
 }
 
 .svg-size_header-like {
-  width: 22rem;
-  height: 20rem;
+  width: 24rem;
+  height: 23rem;
 }
 
 .svg-size_cart {

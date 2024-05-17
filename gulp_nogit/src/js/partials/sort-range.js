@@ -91,23 +91,35 @@ document.addEventListener("DOMContentLoaded", function () {
   const checkboxesContainers = document.querySelectorAll(".sort-menu-block");
 
   checkboxesContainers.forEach(function (container) {
-    container.addEventListener("change", function (event) {
-      const checkbox = event.target
-        .closest(".form-check")
-        .querySelector(".form-check-input");
-      const boxForCheckbox = event.target
-        .closest(".form-check")
-        .querySelector(".sort-menu__box-for-checkbox");
+    const checkboxes = container.querySelectorAll(".form-check-input");
+    const boxForCheckboxes = container.querySelectorAll(
+      ".sort-menu__box-for-checkbox"
+    );
 
-      if (checkbox.checked) {
-        boxForCheckbox.classList.add("checkbox_checked");
-      } else {
-        boxForCheckbox.classList.remove("checkbox_checked");
-      }
+    checkboxes.forEach(function (checkbox, index) {
+      const boxForCheckbox = boxForCheckboxes[index];
+
+      checkbox.addEventListener("change", function () {
+        if (checkbox.checked) {
+          boxForCheckbox.classList.add("checkbox_checked");
+        } else {
+          boxForCheckbox.classList.remove("checkbox_checked");
+        }
+      });
+
+      boxForCheckbox.addEventListener("click", function () {
+        checkbox.checked = !checkbox.checked;
+        if (checkbox.checked) {
+          boxForCheckbox.classList.add("checkbox_checked");
+        } else {
+          boxForCheckbox.classList.remove("checkbox_checked");
+        }
+      });
     });
   });
 });
 
+// Close sort menu
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".sort_closer-button");
 

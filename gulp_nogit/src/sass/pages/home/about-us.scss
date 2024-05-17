@@ -19,7 +19,10 @@
 .about-us_underhead {
   display: flex;
   flex-direction: column;
-  gap: 30rem;
+}
+
+.about-us-margin-bottom {
+  margin: 30rem 0;
 }
 
 .about-us_element-text {
@@ -36,7 +39,7 @@
   p {
     font-size: 16rem;
     font-weight: 400;
-    line-height: 19.2rem;
+    line-height: 19rem;
     text-align: left;
     color: #4c4c4c;
   }
@@ -63,11 +66,12 @@
     gap: 15rem;
     li {
       display: flex;
+      align-items: center;
       flex-direction: row;
       gap: 8rem;
       font-size: 16rem;
       font-weight: 400;
-      line-height: 19.2rem;
+      line-height: 19rem;
       text-align: left;
       &::before {
         content: "";
@@ -75,6 +79,7 @@
         width: 5rem;
         height: 5rem;
         display: block;
+        margin: auto 0;
         border-radius: 50%;
         background: #2a8927;
       }

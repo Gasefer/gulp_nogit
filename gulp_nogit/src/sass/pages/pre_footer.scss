@@ -1,5 +1,5 @@
 .pre_footer {
-  margin-bottom: 40rem;
+  margin-bottom: 50rem;
   width: 100%;
   background: #caf0d2;
   padding: 50rem;
@@ -25,6 +25,10 @@
   line-height: 29rem;
 }
 
+.pre_footer__text_mob {
+  display: none;
+}
+
 .pre_footer__text p {
   font-size: 16rem;
   font-weight: 400;
@@ -48,7 +52,7 @@
   border-radius: 100rem;
   transition: all 0.3s ease-in-out;
   font-size: 16rem;
-  line-height: 19.3rem;
+  line-height: 19rem;
 }
 
 .pre_footer_name,
@@ -60,9 +64,13 @@
   }
 }
 .pre_footer-button {
+  height: 56rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
-  font-size: 16rem;
-  line-height: 24rem;
+  font-size: 16rem !important;
+  line-height: 24rem !important;
   background-color: #2a8927;
   color: #f8f8f8;
   border: none;
