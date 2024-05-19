@@ -68,3 +68,7 @@
 .sort-content-sorting-select {
   display: none;
 }
+
+.dropdown-toggle::after {
+  display: none;
+}

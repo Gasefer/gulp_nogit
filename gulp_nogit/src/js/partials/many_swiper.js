@@ -98,20 +98,23 @@ var likeButtons = document.querySelectorAll(".like-button");
 
 // Додаємо обробник подій для кожної кнопки
 likeButtons.forEach(function (likeButton) {
-  likeButton.addEventListener("click", function (event) {
-    event.preventDefault(); // Відміна стандартної дії по кліку
-
+  likeButton.addEventListener("mouseover", function (event) {
     // Отримуємо стани елементів .button_like та .button_like-active для цієї кнопки
     var like = likeButton.querySelector(".button_like");
     var likeActive = likeButton.querySelector(".button_like-active");
 
-    // Перемикаємо їх видимість
-    if (like.style.display === "none") {
-      like.style.display = "block";
-      likeActive.style.display = "none";
-    } else {
-      like.style.display = "none";
-      likeActive.style.display = "block";
-    }
+    // Встановлюємо видимість для hover
+    like.style.display = "none";
+    likeActive.style.display = "block";
+  });
+
+  likeButton.addEventListener("mouseout", function (event) {
+    // Отримуємо стани елементів .button_like та .button_like-active для цієї кнопки
+    var like = likeButton.querySelector(".button_like");
+    var likeActive = likeButton.querySelector(".button_like-active");
+
+    // Повертаємо видимість після hover
+    like.style.display = "block";
+    likeActive.style.display = "none";
   });
 });

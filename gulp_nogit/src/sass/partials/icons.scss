@@ -3,6 +3,7 @@ $red: #ff4444;
 $black: #121212;
 $gray: #f8f8f8;
 $dark-gray: #4c4c4c;
+$light-gray: #868686;
 
 .color-black {
   fill: $black;
@@ -24,6 +25,9 @@ $dark-gray: #4c4c4c;
   fill: $dark-gray;
 }
 
+.color-light-gray {
+  fill: $light-gray;
+}
 .svg__box {
   width: 24rem;
   height: 24rem;
@@ -169,4 +173,9 @@ $dark-gray: #4c4c4c;
 .svg_arrow-filter {
   width: 14.53rem;
   height: 15rem;
+}
+
+.svg-size_trush {
+  width: 24rem;
+  height: 24rem;
 }

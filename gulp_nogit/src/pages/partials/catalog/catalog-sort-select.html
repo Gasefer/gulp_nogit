@@ -1,12 +1,20 @@
-<button id="dropdown-btn">
-  <span>дешевші</span>
-  <i class="svg__box">
-    @@include('mixins/svg-icon.html', {"name": "arrow_bottom", "class":
-    "svg_arrow-bottom__box"})
-  </i>
-</button>
-<ul id="select-sort">
-  <li data-value="По популярності">по популярності</li>
-  <li data-value="Дешевші">дешевші</li>
-  <li data-value="Доррожчі">дорожчі</li>
-</ul>
+<div class="dropdown">
+  <button
+    id="dropdown-btn"
+    class="btn btn-secondary dropdown-toggle"
+    type="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    <span>дешевші</span>
+    <i class="svg__box">
+      @@include('mixins/svg-icon.html', {"name": "arrow_bottom", "class":
+      "svg_arrow-bottom__box"})
+    </i>
+  </button>
+  <ul id="select-sort">
+    <li class="dropdown-item" data-value="По популярності">по популярності</li>
+    <li class="dropdown-item" data-value="Дешевші">дешевші</li>
+    <li class="dropdown-item" data-value="Доррожчі">дорожчі</li>
+  </ul>
+</div>

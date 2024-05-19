@@ -388,8 +388,43 @@
     </div>
     <div class="catalog-content-pagination">
       <button>Показати ще +</button>
-      <nav aria-label="...">
-        <ul class="catalog-pagination"></ul>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination pagination-desc">
+          <li class="page-item disabled">
+            <a class="page-link" href="#"
+              ><i class="svg__box"
+                >@@include('mixins/svg-icon.html', {"name": "arrow_left",
+                "class": "color-black svg_arrow__box"})</i
+              ></a
+            >
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item">
+            <a class="three-points-pagination" href="#">...</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">10</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#"
+              ><i class="svg__box"
+                >@@include('mixins/svg-icon.html', {"name": "arrow_right",
+                "class": "color-black svg_arrow__box"})</i
+              ></a
+            >
+          </li>
+        </ul>
+        <ul class="pagination pagination-mob">
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="three-points-pagination" href="#">...</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">10</a></li>
+        </ul>
       </nav>
     </div>
   </div>

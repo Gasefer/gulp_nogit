@@ -2,15 +2,16 @@
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(calc((100% - 7 * 22rem) / 8), 1fr)
+    minmax(calc((100% - 7 * 18rem) / 8), 1fr)
   );
-  gap: 22rem;
+  gap: 23rem 18rem;
 }
 
 .grid-content-item {
   display: flex;
   flex-direction: column;
   border-radius: 20rem;
+  gap: 15rem;
 }
 
 .grid-content-item-text {
