@@ -66,3 +66,26 @@ document.addEventListener("DOMContentLoaded", function () {
     isFirstScreenCatalogListClick = false;
   }
 });
+
+// Отримуємо елементи кнопки каталогу та svg-іконок
+const buttonCatalog = document.querySelector(".header__button-catalog");
+const svgSizeCloser = buttonCatalog.querySelector(".svg-size_closer");
+const svgSizeMenu = buttonCatalog.querySelector(".svg-size_menu");
+
+// Додаємо обробник події для події наведення миші на кнопку каталогу
+buttonCatalog.addEventListener("mouseenter", function () {
+  // Додаємо клас .color-green до svg-іконок
+  svgSizeCloser.classList.add("color-green");
+  svgSizeMenu.classList.add("color-green");
+  svgSizeCloser.classList.add("svg__transition");
+  svgSizeMenu.classList.add("svg__transition");
+});
+
+// Додаємо обробник події для події зняття курсора з кнопки каталогу
+buttonCatalog.addEventListener("mouseleave", function () {
+  // Видаляємо клас .color-green з svg-іконок
+  svgSizeCloser.classList.remove("color-green");
+  svgSizeMenu.classList.remove("color-green");
+  svgSizeCloser.classList.remove("svg__transition");
+  svgSizeMenu.classList.remove("svg__transition");
+});

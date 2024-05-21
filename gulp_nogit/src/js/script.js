@@ -6,6 +6,7 @@
   });
 })(jQuery);
 
+//=require partials/commodity_swiper.js
 //=require partials/modal_feedback.js
 //=require partials/swiper.js
 //=require partials/send-form-smtp.js

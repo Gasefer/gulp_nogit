@@ -106,6 +106,7 @@ likeButtons.forEach(function (likeButton) {
     // Встановлюємо видимість для hover
     like.style.display = "none";
     likeActive.style.display = "block";
+    likeActive.style.cursor = "pointer";
   });
 
   likeButton.addEventListener("mouseout", function (event) {

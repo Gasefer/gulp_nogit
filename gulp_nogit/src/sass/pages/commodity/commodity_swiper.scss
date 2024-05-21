@@ -1,0 +1,59 @@
+.commodity_swiper {
+  .swiper-container {
+    width: 50%;
+    height: 100%;
+  }
+
+  .main-swiper {
+    border-radius: 10rem;
+    position: relative;
+    height: 600rem;
+    margin-bottom: 15rem;
+    overflow: hidden;
+    img {
+      width: min-content;
+    }
+  }
+
+  .thumb-swiper {
+    height: 80rem;
+    overflow: hidden;
+  }
+
+  .thumb-swiper .swiper-slide {
+    width: 80rem;
+    height: 80rem;
+    border: 2rem solid transparent;
+    opacity: 1;
+    border-radius: 10rem;
+    img {
+      border-radius: 10rem;
+    }
+  }
+
+  .thumb-swiper .swiper-slide-thumb-active {
+    border: 2rem solid $green-dark;
+    img {
+      opacity: 0.5;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #000;
+  }
+}
+
+.commodity_swiper-button-prev {
+  padding: 12rem 6rem 12rem 12rem;
+  border-radius: 30rem 0 0 30rem;
+}
+
+.commodity_swiper-button-next {
+  padding: 12rem 6rem 12rem 12rem;
+  border-radius: 30rem 0 0 30rem;
+}
+
+.commodity-breadcrumbs {
+  margin-bottom: 10rem;
+}

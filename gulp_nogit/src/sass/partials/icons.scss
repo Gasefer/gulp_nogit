@@ -28,6 +28,11 @@ $light-gray: #868686;
 .color-light-gray {
   fill: $light-gray;
 }
+
+.svg__transition {
+  transition: all 0.3s ease-in-out;
+}
+
 .svg__box {
   width: 24rem;
   height: 24rem;
