@@ -1,0 +1,16 @@
+.commodity_swiper {
+  display: flex;
+  flex-direction: row;
+  gap: 32rem;
+  .swiper-container {
+    width: min-content;
+  }
+}
+
+.commodity_buy-container {
+  width: 100%;
+}
+
+.commodity-page .mini-swiper4 {
+  margin: 99rem 0 0rem 0;
+}

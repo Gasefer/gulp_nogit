@@ -78,3 +78,8 @@
     background-color: #4a9d23;
   }
 }
+
+.pre_footer_name.pre_footer-element:focus,
+.pre_footer_email.pre_footer-element:focus {
+  border: #2a8927 2rem solid;
+}

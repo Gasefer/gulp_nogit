@@ -3,7 +3,12 @@
     <h3>Календула лікарська</h3>
     <div class="commodity_buy-title-desc">
       <div class="commodity_buy-title-availability">
-        В наявності <span>(20 од.)</span>
+        <i>
+          @@include('mixins/svg-icon.html', {"name": "availability_check_mark",
+          "class": "svg_availability-check-mark color-green"})</i
+        >
+        <p>В наявності</p>
+        <span>(20 од.)</span>
       </div>
       <div class="commodity_buy-title-code">Код: <span>5791</span></div>
       <div class="commodity_buy-title-producer">
@@ -13,14 +18,100 @@
   </div>
   <div class="commodity_buy-weight">
     <h6>Вага</h6>
-    <div class="commodity_buy-weight-radio"></div>
+    <div class="commodity_buy-weight-radio">
+      <input
+        type="radio"
+        class="btn-check"
+        name="options-base"
+        id="weight-item1"
+        checked
+      />
+      <label class="btn" for="weight-item1">0.1</label>
+
+      <input
+        type="radio"
+        class="btn-check"
+        name="options-base"
+        id="weight-item2"
+      />
+      <label class="btn" for="weight-item2">0.2</label>
+
+      <input
+        type="radio"
+        class="btn-check"
+        name="options-base"
+        id="weight-item3"
+      />
+      <label class="btn" for="weight-item3">0.5</label>
+      <input
+        type="radio"
+        class="btn-check"
+        name="options-base"
+        id="weight-item4"
+      />
+      <label class="btn" for="weight-item4">1</label>
+      <input
+        type="radio"
+        class="btn-check"
+        name="options-base"
+        id="weight-item5"
+      />
+      <label class="btn" for="weight-item5">3</label>
+    </div>
   </div>
   <div class="commodity_buy-price">
-    <h4>Ціна</h4>
-    <h3>3 грн</h3>
+    <div class="commodity_buy-price-block">
+      <h4>Ціна</h4>
+      <h3>3<span>грн</span></h3>
+    </div>
+    <div class="commodity_buy-like-block svg__box">
+      <i class="commodity-buy-like"
+        >@@include('mixins/svg-icon.html', {"name": "like", "class":
+        "svg-size_header-like color-red"})</i
+      ><i class="commodity-buy-like-active"
+        >@@include('mixins/svg-icon.html', {"name": "heart-red", "class":
+        "svg-size_header-like color-red"})</i
+      >
+    </div>
   </div>
   <div class="commodity_buy-count">
-    <div class="commodity_buy-count-input"></div>
-    <button>Купити</button>
+    <div class="commodity_buy-count-input">
+      <button
+        class="value-control"
+        id="decreaseBtn"
+        onclick="numberInput.stepDown(); updateButtonState();"
+        title="Decrease value"
+        aria-label="Decrease value"
+      >
+        -
+      </button>
+
+      <input
+        class="value-input"
+        type="number"
+        value="0"
+        min="0"
+        max="10000000"
+        name="numberInput"
+        id="numberInput"
+        oninput="updateButtonState()"
+      />
+
+      <button
+        class="value-control"
+        onclick="numberInput.stepUp(); updateButtonState();"
+        title="Increase value"
+        aria-label="Increase value"
+      >
+        +
+      </button>
+    </div>
+    <button class="commodity_buy-btn">
+      <span>Купити </span>
+      <i class="svg__box">
+        @@include('mixins/svg-icon.html', {"name": "cart", "class":
+        "svg-size_cart color-gray"})</i
+      >
+    </button>
   </div>
 </div>

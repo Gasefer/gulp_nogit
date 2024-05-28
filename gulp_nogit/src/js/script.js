@@ -6,15 +6,11 @@
   });
 })(jQuery);
 
-//=require partials/commodity_swiper.js
-//=require partials/modal_feedback.js
-//=require partials/swiper.js
-//=require partials/send-form-smtp.js
 //=require partials/catalog.js
+//=require partials/modal_feedback.js
 //=require partials/many_swiper.js
-//=require partials/mobile_menu.js
-//=require partials/sort-range.js
-//=require partials/sort-range-mobile.js
-//=require partials/catalog_pagination.js
-//=require partials/offcanvas_scrolling.js
+//=require partials/swiper.js
 //=require partials/catalog-sort-select.js
+//=require partials/sort-range.js
+//=require partials/commodity.js
+//=require partials/checkout.js

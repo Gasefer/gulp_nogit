@@ -3,26 +3,25 @@
 }
 
 #dropdown-btn {
+  height: 56rem;
   width: 160rem;
   height: 100%;
   font-size: 16rem;
   line-height: 24rem;
-  padding: 16rem;
+  padding: 16rem 14rem;
   background: var(--Standart-color-White, #f8f8f8);
-  border: 2rem solid #2a8927;
+  border: 2rem solid var(--Standart-color-Light-Gray, #e9e8e8);
+
   border-radius: 100rem;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
   span {
-    display: flex;
-    justify-content: flex-start;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 140rem;
-    overflow: hidden;
+    width: 100rem;
     color: #2a8927;
     font-size: 16rem;
     font-weight: 500;

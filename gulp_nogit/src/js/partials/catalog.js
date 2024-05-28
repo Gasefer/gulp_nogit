@@ -1,10 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var isHeaderButtonClick = false;
-  var isFirstScreenCatalogListClick = false;
+var isHeaderButtonClick = false;
+var isFirstScreenCatalogListClick = false;
 
+var headerButtonCatalog1 = document.querySelector(".header__button-catalog");
+if (headerButtonCatalog1) {
   var bgGray = document.querySelector(".bg-gray");
   var mobileMenu = document.querySelector(".mobile_menu");
-  var headerButtonCatalog = document.querySelector(".header__button-catalog");
   var xCloseElements = document.querySelectorAll(".x_close");
   var xOpenElements = document.querySelectorAll(".x_open");
   var catalogHeaderContainer = document.querySelector(
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ".first-screen_catalog-list"
   );
 
-  headerButtonCatalog.addEventListener("click", function (event) {
+  headerButtonCatalog1.addEventListener("click", function (event) {
     toggleMenu();
   });
 
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     xOpenElements.forEach((element) => {
       element.style.display = isHeaderButtonClick ? "none" : "flex";
     });
-    headerButtonCatalog.classList.toggle("header__button-catalog--active");
+    headerButtonCatalog1.classList.toggle("header__button-catalog--active");
     catalogHeaderContainer.style.display = isHeaderButtonClick
       ? "block"
       : "none";
@@ -59,33 +59,33 @@ document.addEventListener("DOMContentLoaded", function () {
     xOpenElements.forEach((element) => {
       element.style.display = "flex";
     });
-    headerButtonCatalog.classList.remove("header__button-catalog--active");
+    headerButtonCatalog1.classList.remove("header__button-catalog--active");
     catalogHeaderContainer.style.display = "none";
     mobileMenu.classList.remove("active");
     isHeaderButtonClick = false;
     isFirstScreenCatalogListClick = false;
   }
-});
 
-// Отримуємо елементи кнопки каталогу та svg-іконок
-const buttonCatalog = document.querySelector(".header__button-catalog");
-const svgSizeCloser = buttonCatalog.querySelector(".svg-size_closer");
-const svgSizeMenu = buttonCatalog.querySelector(".svg-size_menu");
+  // Отримуємо елементи кнопки каталогу та svg-іконок
+  const buttonCatalog = document.querySelector(".header__button-catalog");
+  const svgSizeCloser = buttonCatalog.querySelector(".svg-size_closer");
+  const svgSizeMenu = buttonCatalog.querySelector(".svg-size_menu");
 
-// Додаємо обробник події для події наведення миші на кнопку каталогу
-buttonCatalog.addEventListener("mouseenter", function () {
-  // Додаємо клас .color-green до svg-іконок
-  svgSizeCloser.classList.add("color-green");
-  svgSizeMenu.classList.add("color-green");
-  svgSizeCloser.classList.add("svg__transition");
-  svgSizeMenu.classList.add("svg__transition");
-});
+  // Додаємо обробник події для події наведення миші на кнопку каталогу
+  buttonCatalog.addEventListener("mouseenter", function () {
+    // Додаємо клас .color-green до svg-іконок
+    svgSizeCloser.classList.add("color-green");
+    svgSizeMenu.classList.add("color-green");
+    svgSizeCloser.classList.add("svg__transition");
+    svgSizeMenu.classList.add("svg__transition");
+  });
 
-// Додаємо обробник події для події зняття курсора з кнопки каталогу
-buttonCatalog.addEventListener("mouseleave", function () {
-  // Видаляємо клас .color-green з svg-іконок
-  svgSizeCloser.classList.remove("color-green");
-  svgSizeMenu.classList.remove("color-green");
-  svgSizeCloser.classList.remove("svg__transition");
-  svgSizeMenu.classList.remove("svg__transition");
-});
+  // Додаємо обробник події для події зняття курсора з кнопки каталогу
+  buttonCatalog.addEventListener("mouseleave", function () {
+    // Видаляємо клас .color-green з svg-іконок
+    svgSizeCloser.classList.remove("color-green");
+    svgSizeMenu.classList.remove("color-green");
+    svgSizeCloser.classList.remove("svg__transition");
+    svgSizeMenu.classList.remove("svg__transition");
+  });
+}

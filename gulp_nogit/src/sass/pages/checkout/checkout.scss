@@ -1,0 +1,55 @@
+.checkout-page {
+  .container_without-header {
+    height: 120rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .container_checkout-order {
+    display: flex;
+    gap: 40rem;
+  }
+
+  .checkout-placing-order-container,
+  .checkout-your-order-container {
+    width: 50%;
+  }
+
+  #courierNpBlock,
+  #pickupStoreBlock {
+    display: none;
+  }
+
+  .checkout_title {
+    font-size: 36rem;
+    line-height: 36rem;
+    font-weight: 700;
+  }
+
+  .checkout_title-and-log {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+  }
+
+  .checkout_log {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    align-items: center;
+    padding: 20rem;
+    background: var(--Standart-color-Light-Gray, #e9e8e8);
+    border-radius: 100rem;
+    p {
+      font-size: 16rem;
+      line-height: 19rem;
+    }
+  }
+  .checkout_link-green {
+    color: $green-dark;
+    font-size: 16rem;
+    line-height: 24rem;
+  }
+}

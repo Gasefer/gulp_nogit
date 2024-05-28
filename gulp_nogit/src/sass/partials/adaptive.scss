@@ -60,6 +60,9 @@ html {
   .footer__main-block_articles {
     display: none;
   }
+  .commodity_swiper .swiper-container {
+    width: 50%;
+  }
 }
 
 @media (max-width: 1138px) {
@@ -72,11 +75,6 @@ html {
   .padding-from-header {
     padding-top: 77rem;
   }
-
-  .section-home {
-    gap: 40rem;
-  }
-
   header {
     padding: 8rem 0;
     .logo {
@@ -146,9 +144,24 @@ html {
     right: -8rem;
   }
 
-  .section-home {
-    margin-bottom: 40rem;
-    gap: 36rem;
+  .main-page {
+    .many-swipers {
+      gap: 40rem;
+    }
+    .section-home {
+      gap: 40rem;
+      margin-bottom: 39rem;
+    }
+    .mini-swiper1,
+    .mini-swiper2,
+    .mini-swiper3,
+    .mini-swiper4,
+    .mini-swiper5 {
+      gap: 16rem;
+    }
+    .about-us-shell {
+      margin-top: -4rem;
+    }
   }
 
   .first-screen {
@@ -342,12 +355,17 @@ html {
     }
   }
 
-  .footer__bottom,
-  .footer_block-box {
-    font-size: 14rem;
-    line-height: 21rem;
+  .main-page {
+    .footer__bottom,
+    .footer_block-box {
+      font-size: 14rem;
+      line-height: 21rem;
+    }
   }
-
+  .footer__main-block_articles_contacts {
+    line-height: 21rem;
+    font-size: 14rem;
+  }
   .footer_social-icons {
     margin-right: 31rem;
     margin-bottom: 2rem;
@@ -458,19 +476,142 @@ html {
       }
     }
   }
+
   .catalog-content-pagination {
     margin-top: 0;
   }
+
   .mini-swiper4 {
     margin: 48rem 0 80rem 0;
     gap: 16rem;
   }
-  .footer__bottom,
-  .footer_block-box {
-    font-size: 16rem;
+
+  .commodity_buy .commodity_buy-like-block {
+    display: flex;
   }
-  .footer__main-block {
+
+  .commodity-breadcrumbs {
+    margin-bottom: 7rem;
+    .breadcrums_and_title {
+      padding: 10rem;
+    }
+  }
+
+  .commodity_swiper .main-swiper {
+    margin-bottom: 8rem;
+  }
+
+  .commodity_buy .commodity_buy-title h3 {
+    font-size: 24rem;
+    line-height: 24rem;
+  }
+
+  .commodity_buy .commodity_buy-title {
+    margin-left: 0;
+  }
+
+  .commodity_buy .commodity_buy-title .commodity_buy-title-desc {
+    line-height: 21rem;
+  }
+
+  .commodity_buy-title-availability span {
+    display: none;
+  }
+
+  .commodity_buy {
+    gap: 16rem;
+  }
+
+  .commodity_buy .commodity_buy-weight,
+  .commodity_buy .commodity_buy-price,
+  .commodity_buy .commodity_buy-count {
+    padding: 15rem;
+  }
+
+  .commodity_buy .commodity_buy-price-block {
+    gap: 23rem;
+  }
+
+  .commodity_buy-count {
+    gap: 16rem;
+  }
+
+  .value-input {
+    border-radius: 20rem;
+  }
+
+  .commodity_description {
+    margin-top: 16rem;
+  }
+
+  .commodity_description-desc {
+    gap: 6rem;
+  }
+
+  .commodity_description-title {
+    font-size: 18rem;
+  }
+
+  .commodity_description-text {
+    max-width: 100%;
+  }
+
+  .commodity_description {
+    gap: 17rem;
+  }
+
+  .commodity_description-characteristics {
     gap: 14rem;
+  }
+
+  .commodity_description-characteristics-third.big {
+    font-size: 16rem;
+    line-height: 19rem;
+  }
+  .commodity_swiper {
+    flex-direction: column;
+    .swiper-container {
+      width: 100%;
+    }
+  }
+
+  .mini-swiper5 {
+    gap: 15rem;
+  }
+
+  .commodity-page .section-home {
+    gap: 78rem;
+    margin-bottom: 40rem;
+  }
+
+  .commodity-page .mini-swiper4 {
+    margin: 81rem 0 40rem 0;
+  }
+  .commodity_description {
+    flex-direction: column;
+    .commodity_description-desc {
+      font-size: 14rem;
+      line-height: 21rem;
+      padding: 16rem;
+    }
+    .commodity_description-characteristics {
+      padding: 16rem 0;
+      font-size: 14rem;
+      line-height: 21rem;
+      .commodity_description-characteristics-title {
+        font-weight: 700;
+      }
+      .commodity_description-characteristics-body {
+        .commodity_description-characteristics-item {
+          font-size: 14rem;
+          line-height: 21rem;
+        }
+      }
+    }
+    .commodity_description-desc,
+    .commodity_description-characteristics {
+      width: 100%;
+    }
   }
 
   .footer__main-block_articles_contacts {
@@ -513,8 +654,8 @@ html {
     }
   }
 
-  .section-home {
-    gap: 28rem;
+  .main-page .section-home {
+    gap: 32rem;
     margin-bottom: 32rem;
   }
 
@@ -692,5 +833,114 @@ html {
 
   .pagination-desc {
     display: none;
+  }
+
+  .commodity_swiper .main-swiper {
+    height: 300rem;
+  }
+
+  .commodity_swiper .thumb-swiper,
+  .commodity_swiper .thumb-swiper .swiper-slide {
+    height: 60rem;
+  }
+
+  .commodity_swiper {
+    gap: 16rem;
+  }
+
+  .commodity_buy .commodity_buy-weight-radio label {
+    background-color: #f5f5f5;
+  }
+
+  .commodity_buy .commodity_buy-weight-radio label,
+  .commodity_buy .commodity_buy-weight h6 {
+    font-size: 14rem;
+    line-height: 21rem;
+  }
+
+  .commodity_buy .commodity_buy-weight h6 {
+    margin-bottom: 8rem;
+  }
+
+  .commodity_buy .commodity_buy-weight {
+    padding: 15rem 12rem 15rem 15rem;
+  }
+
+  .commodity_buy-count {
+    flex-direction: column;
+  }
+
+  .commodity_buy .commodity_buy-count {
+    border-radius: 20rem;
+  }
+
+  .commodity_buy .value-input {
+    height: 53rem;
+  }
+
+  .commodity_buy-count-input {
+    align-items: flex-start;
+  }
+
+  .commodity_buy-count {
+    gap: 13rem;
+  }
+
+  .commodity_description {
+    margin-top: 24rem;
+  }
+  .commodity_description-characteristics-third.big.two_row {
+    flex-direction: column;
+    gap: 0;
+    margin-right: 3rem;
+  }
+
+  .commodity_description-characteristics-first.commodity-mt {
+    margin-top: 16rem;
+  }
+
+  .commodity_description-characteristics
+    .commodity_description-characteristics-body {
+    gap: 15rem;
+  }
+
+  .commodity_description-characteristics-second.commodity-mt {
+    margin-top: 12rem;
+  }
+
+  .commodity-page .section-home {
+    gap: 5rem;
+    margin-bottom: 32rem;
+  }
+
+  .commodity-page .mini-swiper5 {
+    gap: 16rem;
+  }
+
+  .commodity-page .mini-swiper4 {
+    margin: 25rem 0 -6rem 0;
+  }
+
+  .catalog.catalog-page {
+    gap: 19rem;
+  }
+  .sort-content-filter-and-sorting .btn__filter {
+    width: 160rem;
+    justify-content: center;
+  }
+
+  .catalog-sort-main-content {
+    gap: 19rem;
+  }
+
+  .catalog-market .many-swipers__sales-cell {
+    gap: 8rem;
+  }
+
+  .catalog .container-catalog-swiper-you-viewed {
+    .mini-swiper4 {
+      gap: 16rem;
+      margin: 13rem 0 32rem 0;
+    }
   }
 }

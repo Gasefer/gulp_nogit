@@ -1,0 +1,133 @@
+<div class="checkout-placing-order">
+  <div class="checkout_title-and-log">
+    <div class="checkout_title">Оформлення замовлення</div>
+    <div class="checkout_log">
+      <p>Увійдіть у свій кабінет, аби швидше оформити замовлення</p>
+      <a class="checkout_link-green" href="#">Увійти</a>
+    </div>
+  </div>
+  <div class="checkout_contacts-data">
+    <div class="checkout_title-items">
+      <div class="checkout_green-circle">1</div>
+      <h4>Контактні дані</h4>
+    </div>
+    <div class="checkout_name-and-lastname">
+      <div class="checkout_name">
+        <label for="checkoutInputName">Ім'я</label>
+        <input type="text" id="checkoutInputName" />
+      </div>
+      <div class="checkout_lastname">
+        <label for="checkoutInputLastname">Призвіще</label>
+        <input type="text" id="checkoutInputLastname" />
+      </div>
+    </div>
+    <div class="checkout_phone">
+      <label for="checkoutInputPhone">Телефон</label>
+      <input type="text" id="checkoutInputPhone" />
+    </div>
+  </div>
+  <div class="checkout_separator"></div>
+  <div class="checkout_delivery">
+    <div class="checkout_title-items">
+      <div class="checkout_green-circle">2</div>
+      <h4>Доставка</h4>
+    </div>
+    <select class="js-example-basic-single" name="delivery" id="deliverySelect">
+      <option value="nova_poshta" selected="selected">
+        Відділення Нова Пошта
+      </option>
+      <option value="courier_np">Кур’єром Нової Пошти</option>
+      <option value="pickup_store">Самовивіз з магазину</option>
+    </select>
+
+    <div id="novaPoshtaBlock" class="delivery-block">
+      <div class="novaposhta-city">
+        <div class="novaposhta-city-title">Ваш населений пункт:</div>
+        <select class="js-example-basic-single-city"></select>
+      </div>
+      <div class="novaposhta-viddilenya">
+        <div class="novaposhta-viddilenya-title">Відділення:</div>
+        <select class="js-example-basic-single-viddilenya"></select>
+      </div>
+    </div>
+    <div id="courierNpBlock" class="checkout-delivery-block">
+      <div class="novaposhta-city">
+        <div class="novaposhta-city-title">Ваш населений пункт:</div>
+        <select class="js-example-basic-single-city"></select>
+      </div>
+      <div class="novaposhta-address">
+        <div class="novaposhta-address-street">
+          <label for="checkoutInputStreet">Вулиця</label>
+          <input type="text" id="checkoutInputStreet" />
+        </div>
+        <div class="novaposhta-bud-and-kvart">
+          <div class="novaposhta-bud">
+            <label for="checkoutInputBud">Будинок</label>
+            <input type="text" id="checkoutInputBud" />
+          </div>
+          <div class="novaposhta-kvart">
+            <label for="checkoutInputKvart">Квартира</label>
+            <input type="text" id="checkoutInputKvart" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pickupStoreBlock" class="checkout-pickup-block">
+      <div class="svg__box">
+        @@include('mixins/svg-icon.html', {"name": "mark", "class":
+        "svg_checkout-mark color-black "})
+      </div>
+      <div class="checkout-pickup-text">
+        <p>м. Київ, вул. Світлицького 35, оф. 43/1-1</p>
+        <p class="checkout-pickup-gray-text">Пн-Пт 08:30-17:30</p>
+      </div>
+    </div>
+  </div>
+  <div class="checkout_separator"></div>
+  <div class="checkout_payment">
+    <div class="checkout_title-items">
+      <div class="checkout_green-circle">3</div>
+      <h4>Оплата</h4>
+    </div>
+    <div class="checkout_radio">
+      <div class="checkout_radio1">
+        <div class="checkout_radio-box">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault1"
+          />
+          <label class="form-check-label" for="flexRadioDefault1">
+            Оплата під час отримання товару
+          </label>
+        </div>
+        <span
+          >Наш менеджер зв'яжеться з вами для уточнення інформації щодо
+          оплати</span
+        >
+      </div>
+      <div class="checkout_radio2">
+        <div class="checkout_radio-box">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault1"
+          />
+          <label class="form-check-label" for="flexRadioDefault1">
+            Оплатити карткою зараз
+          </label>
+        </div>
+        <span
+          >Наш менеджер зв'яжеться з вами для уточнення інформації щодо
+          оплати</span
+        >
+      </div>
+    </div>
+  </div>
+  <div class="checkout_footer">
+    Інтернет-магазин насіння, саджанців, добрив і засобів захисту рослин
+    "Plante" © 2023
+  </div>
+</div>

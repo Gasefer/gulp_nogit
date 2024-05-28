@@ -106,24 +106,25 @@ input[type="range"]::-moz-range-thumb {
 input[type="range"]::-webkit-slider-thumb:hover {
   border: 3rem solid #2a8927;
 }
+.form_control {
+  input[type="number"] {
+    color: #121212;
+    font-size: 16rem;
+    line-height: 19.2rem;
+    border: none;
+    padding: 16rem;
+    border-radius: 100rem;
+    background: var(--Standart-color-Light-Gray, #e9e8e8);
+    width: 105.5rem;
+    height: 51rem;
+  }
 
-input[type="number"] {
-  color: #121212;
-  font-size: 16rem;
-  line-height: 19.2rem;
-  border: none;
-  padding: 16rem;
-  border-radius: 100rem;
-  background: var(--Standart-color-Light-Gray, #e9e8e8);
-  width: 105.5rem;
-  height: 51rem;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  appearance: none;
-  margin: 0;
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
 }
 
 input[type="range"] {
@@ -425,7 +426,7 @@ input[type="range"] {
 
   ul {
     flex-direction: row;
-    gap: 10rem;
+    gap: 15rem;
     align-items: center;
     :last-child .page-link,
     :first-child .page-link {
@@ -465,4 +466,15 @@ input[type="range"] {
 
 .page-item:not(:first-child) .page-link {
   margin-left: 0;
+}
+
+.pagination_pages {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  align-items: center;
+}
+
+.pagination.pagination-mob {
+  gap: 10rem;
 }
